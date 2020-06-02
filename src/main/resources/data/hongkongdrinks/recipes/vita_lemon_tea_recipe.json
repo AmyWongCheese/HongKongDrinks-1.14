@@ -1,0 +1,25 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:yellow_dye"
+    },
+    {
+      "tag": "forge:sugar"
+    },
+    {
+      "tag": "forge:fruits/lemon"
+    },
+    {
+      "tag": "forge:crops/tealeaf"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:vita_lemon_tea",
+    "count": 1
+  }
+}

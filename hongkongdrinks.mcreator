@@ -45,12 +45,136 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "white_tea"
+    },
+    {
+      "name": "VitaLemonTeaFoodEaten",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vita_lemon_tea_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaLemonTea",
+      "type": "food",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vita_lemon_tea"
+    },
+    {
+      "name": "HongKongDrinks",
+      "type": "tab",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hong_kong_drinks"
+    },
+    {
+      "name": "VitaLemonTeaEntity",
+      "type": "mob",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vita_lemon_tea_entity"
+    },
+    {
+      "name": "VitaLemonTeaEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vita_lemon_tea_entity_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaLemonTeaOnFoodRightClicked",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "vita_lemon_tea_on_food_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaLemonTeaRecipe",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "vita_lemon_tea_recipe"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.hongkongdrinks.vita_lemon_tea": "Vita Lemon Tea",
+      "item.hongkongdrinks.vita_lemon_tea_entity": "Vita Lemon Tea Spawn Egg",
+      "itemGroup.tabhong_kong_drinks": "Hong Kong Drinks",
+      "entity.hongkongdrinks.vita_lemon_tea_entity": "Vita Lemon Tea"
+    }
   },
   "workspaceSettings": {
     "modid": "hongkongdrinks",

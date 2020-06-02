@@ -1,0 +1,11 @@
+{
+  "_fv": 8,
+  "_type": "tab",
+  "definition": {
+    "name": "Hong Kong Drinks",
+    "icon": {
+      "value": "CUSTOM:VitaLemonTea"
+    },
+    "showSearch": false
+  }
+}

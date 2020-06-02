@@ -1,1 +1,6 @@
-{}
+{
+  "item.hongkongdrinks.vita_lemon_tea": "Vita Lemon Tea",
+  "item.hongkongdrinks.vita_lemon_tea_entity": "Vita Lemon Tea Spawn Egg",
+  "itemGroup.tabhong_kong_drinks": "Hong Kong Drinks",
+  "entity.hongkongdrinks.vita_lemon_tea_entity": "Vita Lemon Tea"
+}
