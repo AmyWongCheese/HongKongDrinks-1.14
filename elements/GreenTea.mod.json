@@ -1,0 +1,19 @@
+{
+  "_fv": 8,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Blocks.LEAVES"
+      },
+      {
+        "value": "Blocks.LEAVES"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "green_tea",
+    "namespace": "forge"
+  }
+}

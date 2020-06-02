@@ -1,0 +1,16 @@
+{
+  "_fv": 8,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Blocks.LEAVES"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "oolong_tea",
+    "namespace": "forge"
+  }
+}

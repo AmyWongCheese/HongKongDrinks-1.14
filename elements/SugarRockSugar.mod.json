@@ -1,0 +1,16 @@
+{
+  "_fv": 8,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Items.SUGAR"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "sugar/rock_sugar",
+    "namespace": "forge"
+  }
+}

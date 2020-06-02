@@ -1,0 +1,19 @@
+{
+  "_fv": 8,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Blocks.RED_FLOWER#8"
+      },
+      {
+        "value": "Blocks.YELLOW_FLOWER"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "flowers/chrysanthemum",
+    "namespace": "forge"
+  }
+}
