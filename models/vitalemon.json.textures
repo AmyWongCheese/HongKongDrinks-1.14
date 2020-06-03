@@ -23,6 +23,18 @@
         "0": "healthworkspear"
       },
       "name": "healthworkspear"
+    },
+    "mandarintea": {
+      "map": {
+        "0": "mandarintea"
+      },
+      "name": "mandarintea"
+    },
+    "pineapplejuice": {
+      "map": {
+        "0": "pineapplejuice"
+      },
+      "name": "pineapplejuice"
     }
   }
 }

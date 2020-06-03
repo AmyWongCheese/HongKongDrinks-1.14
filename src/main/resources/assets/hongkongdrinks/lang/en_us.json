@@ -1,10 +1,14 @@
 {
   "item.hongkongdrinks.healthworks_rock_sugar_with_pear_drink": "Healthworks Rock Sugar With Pear Drink",
-  "entity.hongkongdrinks.healthworks_hawhorn_apple_entity": "Healthworks Hawhorn Apple Drink",
-  "item.hongkongdrinks.healthworks_hawhorn_apple_drink": "Healthworks Hawhorn Apple Drink",
-  "entity.hongkongdrinks.healthworks_rock_sugar_with_pear_entity": "Healthworks Rock Sugar With Pear Drink",
+  "entity.hongkongdrinks.yg_pineapple_juice_entity": "Yeung Gwong Pineapple Juice",
+  "item.hongkongdrinks.yg_pineapple_juice": "Yeung Gwong Pineapple Juice",
   "item.hongkongdrinks.vita_lemon_tea": "Vita Lemon Tea",
   "entity.hongkongdrinks.vita_apple_green_tea_entity": "Vita Apple Green Tea",
+  "entity.hongkongdrinks.healthworks_hawhorn_apple_entity": "Healthworks Hawhorn Apple Drink",
+  "item.hongkongdrinks.healthworks_hawhorn_apple_drink": "Healthworks Hawhorn Apple Drink",
+  "entity.hongkongdrinks.yg_mandarin_tea_entity": "Yeung Gwong Mandarin Tea",
+  "entity.hongkongdrinks.healthworks_rock_sugar_with_pear_entity": "Healthworks Rock Sugar With Pear Drink",
+  "item.hongkongdrinks.yg_mandarin_tea": "Yeung Gwong Mandarin Tea",
   "itemGroup.tabhong_kong_drinks": "Hong Kong Drinks",
   "entity.hongkongdrinks.vita_lemon_tea_entity": "Vita Lemon Tea",
   "item.hongkongdrinks.vita_apple_green_tea": "Vita Apple Green Tea"

@@ -7,7 +7,7 @@ version="1.0.0"
 displayName="Hong Kong Drinks"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
-authors="mmwong, MCreator"
+authors="NeoCosplayer, MCreator"
 
 [[dependencies.hongkongdrinks]]
     modId="minecraft"
