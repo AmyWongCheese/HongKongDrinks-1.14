@@ -1,0 +1,25 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:lime_dye"
+    },
+    {
+      "tag": "forge:sugar"
+    },
+    {
+      "item": "minecraft:golden_apple"
+    },
+    {
+      "tag": "forge:fruits/apple"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:healthworks_hawhorn_apple_drink",
+    "count": 1
+  }
+}

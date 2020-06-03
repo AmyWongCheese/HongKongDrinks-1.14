@@ -5,6 +5,18 @@
         "0": "vitalemontea"
       },
       "name": "default"
+    },
+    "applegreentea": {
+      "map": {
+        "0": "applegreentea"
+      },
+      "name": "applegreentea"
+    },
+    "healthworksapple": {
+      "map": {
+        "0": "healthworksapple"
+      },
+      "name": "healthworksapple"
     }
   }
 }
