@@ -1,0 +1,6 @@
+{
+  "parent": "hongkongdrinks:custom/taotigreenteabottle1",
+  "textures": {
+    "0": "hongkongdrinks:blocks/taotiwhiteteabottle"
+  }
+}

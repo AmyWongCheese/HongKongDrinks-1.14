@@ -1,0 +1,22 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:black_dye"
+    },
+    {
+      "tag": "forge:oolong_tea"
+    },
+    {
+      "tag": "forge:crops/barley"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:tao_ti_meta_tea",
+    "count": 1
+  }
+}

@@ -35,6 +35,48 @@
         "0": "pineapplejuice"
       },
       "name": "pineapplejuice"
+    },
+    "taotigrapejuice": {
+      "map": {
+        "0": "taotigrapejuice"
+      },
+      "name": "taotigrapejuice"
+    },
+    "taotigreentea": {
+      "map": {
+        "0": "taotigreentea"
+      },
+      "name": "taotigreentea"
+    },
+    "taotimandarinlemon": {
+      "map": {
+        "0": "taotimandarinlemon"
+      },
+      "name": "taotimandarinlemon"
+    },
+    "taotimetatea": {
+      "map": {
+        "0": "taotimetatea"
+      },
+      "name": "taotimetatea"
+    },
+    "taotioolong": {
+      "map": {
+        "0": "taotioolong"
+      },
+      "name": "taotioolong"
+    },
+    "vitablackcurrantjuice": {
+      "map": {
+        "0": "vitablackcurrantjuice"
+      },
+      "name": "vitablackcurrantjuice"
+    },
+    "vitachocomilk": {
+      "map": {
+        "0": "vitachocomilk"
+      },
+      "name": "vitachocomilk"
     }
   }
 }

@@ -1,0 +1,28 @@
+{
+  "_fv": 8,
+  "_type": "food",
+  "definition": {
+    "renderType": 1,
+    "texture": "taotimetatea",
+    "customModelName": "vitalemon:taotimetatea",
+    "name": "Tao Ti Supreme Meta Tea",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:HongKongDrinks"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatingSpeed": 32,
+    "forDogs": false,
+    "isAlwaysEdible": false,
+    "animation": "drink",
+    "hasGlow": false,
+    "onRightClicked": {
+      "name": "TaoTiMetaTeaOnFoodRightClicked"
+    },
+    "onEaten": {
+      "name": "VitaLemonTeaFoodEaten"
+    }
+  }
+}

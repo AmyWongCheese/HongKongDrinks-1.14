@@ -1,0 +1,22 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:brown_dye"
+    },
+    {
+      "tag": "forge:crops/cocoabeans"
+    },
+    {
+      "tag": "forge:milk"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:vita_chocolate_milk",
+    "count": 1
+  }
+}
