@@ -9,17 +9,14 @@
       "item": "minecraft:lime_dye"
     },
     {
-      "tag": "forge:sugar"
+      "tag": "forge:sugar/rock_sugar"
     },
     {
-      "tag": "forge:fruits/hawhorn"
-    },
-    {
-      "tag": "forge:fruits/apple"
+      "tag": "forge:fruits/pear"
     }
   ],
   "result": {
-    "item": "hongkongdrinks:healthworks_hawhorn_apple_drink",
+    "item": "hongkongdrinks:healthworks_rock_sugar_with_pear_drink",
     "count": 1
   }
 }

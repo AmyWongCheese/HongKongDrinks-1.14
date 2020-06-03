@@ -359,19 +359,112 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "healthworks_hawhorn_apple_recipe"
+    },
+    {
+      "name": "HealthworksRockSugarWithPearDrink",
+      "type": "food",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "healthworks_rock_sugar_with_pear_drink"
+    },
+    {
+      "name": "HealthworksRockSugarWithPearEntity",
+      "type": "mob",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "healthworks_rock_sugar_with_pear_entity"
+    },
+    {
+      "name": "HealthworksRockSugarWithPearEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "healthworks_rock_sugar_with_pear_entity_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HealthworksRockSugarWithPearDrinkOnFoodRightClicked",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "healthworks_rock_sugar_with_pear_drink_on_food_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HealthworksRockSugarWithPearRecipe",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "healthworks_rock_sugar_with_pear_recipe"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.hongkongdrinks.healthworks_rock_sugar_with_pear_drink": "Healthworks Rock Sugar With Pear Drink",
       "entity.hongkongdrinks.healthworks_hawhorn_apple_entity": "Healthworks Hawhorn Apple Drink",
-      "item.hongkongdrinks.vita_apple_green_tea_entity": "Vita Apple Green Tea Spawn Egg",
       "item.hongkongdrinks.healthworks_hawhorn_apple_drink": "Healthworks Hawhorn Apple Drink",
+      "entity.hongkongdrinks.healthworks_rock_sugar_with_pear_entity": "Healthworks Rock Sugar With Pear Drink",
       "item.hongkongdrinks.vita_lemon_tea": "Vita Lemon Tea",
       "entity.hongkongdrinks.vita_apple_green_tea_entity": "Vita Apple Green Tea",
       "itemGroup.tabhong_kong_drinks": "Hong Kong Drinks",
-      "item.hongkongdrinks.healthworks_hawhorn_apple_entity": "Healthworks Hawhorn Apple Drink Spawn Egg",
       "entity.hongkongdrinks.vita_lemon_tea_entity": "Vita Lemon Tea",
       "item.hongkongdrinks.vita_apple_green_tea": "Vita Apple Green Tea"
     }

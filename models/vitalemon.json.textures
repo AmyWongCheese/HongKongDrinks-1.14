@@ -17,6 +17,12 @@
         "0": "healthworksapple"
       },
       "name": "healthworksapple"
+    },
+    "healthworkspear": {
+      "map": {
+        "0": "healthworkspear"
+      },
+      "name": "healthworkspear"
     }
   }
 }
