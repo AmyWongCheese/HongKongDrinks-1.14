@@ -1,0 +1,37 @@
+{
+  "_fv": 8,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Blocks.REEDS"
+      },
+      {
+        "value": "Blocks.BAMBOO"
+      },
+      {
+        "value": "Blocks.LOG#0"
+      },
+      {
+        "value": "Blocks.LOG#1"
+      },
+      {
+        "value": "Blocks.LOG#2"
+      },
+      {
+        "value": "Blocks.LOG#3"
+      },
+      {
+        "value": "Blocks.LOG2#0"
+      },
+      {
+        "value": "Blocks.LOG2#1"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "fiber",
+    "namespace": "forge"
+  }
+}

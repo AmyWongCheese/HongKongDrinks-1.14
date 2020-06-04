@@ -1,0 +1,22 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:red_dye"
+    },
+    {
+      "tag": "forge:sugar"
+    },
+    {
+      "tag": "forge:fruits/lime"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:vita_honey_lime_drink",
+    "count": 1
+  }
+}

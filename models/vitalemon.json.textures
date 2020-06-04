@@ -77,6 +77,96 @@
         "0": "vitachocomilk"
       },
       "name": "vitachocomilk"
+    },
+    "vitact": {
+      "map": {
+        "0": "vitact"
+      },
+      "name": "vitact"
+    },
+    "vitaguava": {
+      "map": {
+        "0": "applegreentea"
+      },
+      "name": "vitaguava"
+    },
+    "vitahoneylime": {
+      "map": {
+        "0": "vitahoneylime"
+      },
+      "name": "vitahoneylime"
+    },
+    "vitaimperatae": {
+      "map": {
+        "0": "vitaimperatae"
+      },
+      "name": "vitaimperatae"
+    },
+    "vitamaltsoyamilk": {
+      "map": {
+        "0": "vitamaltsoyamilk"
+      },
+      "name": "vitamaltsoyamilk"
+    },
+    "vitamango": {
+      "map": {
+        "0": "vitamango"
+      },
+      "name": "vitamango"
+    },
+    "vitasoyamilk": {
+      "map": {
+        "0": "vitasoyamilk"
+      },
+      "name": "vitasoyamilk"
+    },
+    "ygapplejuice": {
+      "map": {
+        "0": "ygapplejuice"
+      },
+      "name": "ygapplejuice"
+    },
+    "ygcoconutmilk": {
+      "map": {
+        "0": "ygcoconutmilk"
+      },
+      "name": "ygcoconutmilk"
+    },
+    "ygct": {
+      "map": {
+        "0": "ygct"
+      },
+      "name": "ygct"
+    },
+    "yglemontea": {
+      "map": {
+        "0": "yglemontea"
+      },
+      "name": "yglemontea"
+    },
+    "ygmango": {
+      "map": {
+        "0": "ygmango"
+      },
+      "name": "ygmango"
+    },
+    "ygmelonmilk": {
+      "map": {
+        "0": "ygmelonmilk"
+      },
+      "name": "ygmelonmilk"
+    },
+    "ygorange": {
+      "map": {
+        "0": "ygorange"
+      },
+      "name": "ygorange"
+    },
+    "ygpeachtea": {
+      "map": {
+        "0": "ygpeachtea"
+      },
+      "name": "ygpeachtea"
     }
   }
 }

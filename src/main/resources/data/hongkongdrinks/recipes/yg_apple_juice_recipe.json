@@ -1,0 +1,22 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:red_dye"
+    },
+    {
+      "tag": "forge:sugar"
+    },
+    {
+      "tag": "forge:fruits/apple"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:yg_apple_juice",
+    "count": 1
+  }
+}

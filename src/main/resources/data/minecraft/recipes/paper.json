@@ -1,0 +1,22 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "tag": "forge:fiber"
+    },
+    "1": {
+      "tag": "forge:fiber"
+    },
+    "2": {
+      "tag": "forge:fiber"
+    }
+  },
+  "result": {
+    "item": "minecraft:paper",
+    "count": 3
+  }
+}

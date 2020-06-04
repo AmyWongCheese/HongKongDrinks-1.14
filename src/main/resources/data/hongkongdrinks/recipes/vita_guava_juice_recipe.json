@@ -1,0 +1,22 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:lime_dye"
+    },
+    {
+      "tag": "forge:sugar"
+    },
+    {
+      "tag": "forge:fruits/guava"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:vita_guava_juice",
+    "count": 1
+  }
+}

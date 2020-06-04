@@ -1,0 +1,25 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:light_blue_dye"
+    },
+    {
+      "tag": "forge:sugar"
+    },
+    {
+      "tag": "forge:fruits/cantaloupe"
+    },
+    {
+      "tag": "forge:crops/soybean"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:yg_melon_milk",
+    "count": 1
+  }
+}

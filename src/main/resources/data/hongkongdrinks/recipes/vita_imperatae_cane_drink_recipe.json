@@ -1,0 +1,31 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:red_dye"
+    },
+    {
+      "tag": "forge:sugar"
+    },
+    {
+      "item": "minecraft:sugar_cane"
+    },
+    {
+      "item": "minecraft:grass"
+    },
+    {
+      "tag": "forge:crops/carrot"
+    },
+    {
+      "tag": "forge:crops/waterchestnut"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:vita_imperatae_cane_drink",
+    "count": 1
+  }
+}
