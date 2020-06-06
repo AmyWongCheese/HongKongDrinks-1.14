@@ -12,76 +12,76 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.block.Blocks;
 
-import net.mcreator.hongkongdrinks.item.VitaAppleGreenTeaItem;
-import net.mcreator.hongkongdrinks.entity.VitaAppleGreenTeaEntityEntity;
+import net.mcreator.hongkongdrinks.item.HFTPassionFruitItem;
+import net.mcreator.hongkongdrinks.entity.HFTPassionFruitEntityEntity;
 import net.mcreator.hongkongdrinks.HongkongdrinksModElements;
 
 @HongkongdrinksModElements.ModElement.Tag
-public class VitaAppleGreenTeaOnFoodRightClickedProcedure extends HongkongdrinksModElements.ModElement {
-	public VitaAppleGreenTeaOnFoodRightClickedProcedure(HongkongdrinksModElements instance) {
-		super(instance, 16);
+public class HFTPassionFruitOnFoodRightClickedProcedure extends HongkongdrinksModElements.ModElement {
+	public HFTPassionFruitOnFoodRightClickedProcedure(HongkongdrinksModElements instance) {
+		super(instance, 168);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure VitaAppleGreenTeaOnFoodRightClicked!");
+			System.err.println("Failed to load dependency entity for procedure HFTPassionFruitOnFoodRightClicked!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
-			System.err.println("Failed to load dependency x for procedure VitaAppleGreenTeaOnFoodRightClicked!");
+			System.err.println("Failed to load dependency x for procedure HFTPassionFruitOnFoodRightClicked!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
-			System.err.println("Failed to load dependency y for procedure VitaAppleGreenTeaOnFoodRightClicked!");
+			System.err.println("Failed to load dependency y for procedure HFTPassionFruitOnFoodRightClicked!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
-			System.err.println("Failed to load dependency z for procedure VitaAppleGreenTeaOnFoodRightClicked!");
+			System.err.println("Failed to load dependency z for procedure HFTPassionFruitOnFoodRightClicked!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure VitaAppleGreenTeaOnFoodRightClicked!");
+			System.err.println("Failed to load dependency world for procedure HFTPassionFruitOnFoodRightClicked!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		int x = (int) dependencies.get("x");
-		int y = (int) dependencies.get("y");
-		int z = (int) dependencies.get("z");
+		float x = (float) entity.posX;
+		float y = (float) entity.posY;
+		float z = (float) entity.posZ;
 		World world = (World) dependencies.get("world");
-		if ((((entity.isSneaking()) && (new ItemStack(VitaAppleGreenTeaItem.block, (int) (1))
+		if ((((entity.isSneaking()) && (new ItemStack(HFTPassionFruitItem.block, (int) (1))
 				.getItem() == ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem()))
-				|| ((new ItemStack(VitaAppleGreenTeaItem.block, (int) (1))
+				|| ((new ItemStack(HFTPassionFruitItem.block, (int) (1))
 						.getItem() == ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY).getItem())
 						&& (new ItemStack(Blocks.AIR, (int) (1))
 								.getItem() == ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 										.getItem())))) {
 			if (entity instanceof PlayerEntity)
 				((PlayerEntity) entity).inventory
-						.clearMatchingItems(p -> new ItemStack(VitaAppleGreenTeaItem.block, (int) (1)).getItem() == p.getItem(), (int) 1);
+						.clearMatchingItems(p -> new ItemStack(HFTPassionFruitItem.block, (int) (1)).getItem() == p.getItem(), (int) 1);
 			world.playSound((PlayerEntity) null, x, y, z,
 					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wood.place")),
 					SoundCategory.NEUTRAL, (float) 1, (float) 1);
 			if (((entity.getHorizontalFacing()) == Direction.NORTH)) {
 				if (!world.isRemote) {
-					Entity entityToSpawn = new VitaAppleGreenTeaEntityEntity.CustomEntity(VitaAppleGreenTeaEntityEntity.entity, world);
+					Entity entityToSpawn = new HFTPassionFruitEntityEntity.CustomEntity(HFTPassionFruitEntityEntity.entity, world);
 					entityToSpawn.setLocationAndAngles((x), (y + 1), (z - 1), world.rand.nextFloat() * 360F, 0.0F);
 					world.addEntity(entityToSpawn);
 				}
 			} else if (((entity.getHorizontalFacing()) == Direction.SOUTH)) {
 				if (!world.isRemote) {
-					Entity entityToSpawn = new VitaAppleGreenTeaEntityEntity.CustomEntity(VitaAppleGreenTeaEntityEntity.entity, world);
+					Entity entityToSpawn = new HFTPassionFruitEntityEntity.CustomEntity(HFTPassionFruitEntityEntity.entity, world);
 					entityToSpawn.setLocationAndAngles((x), (y + 1), (z + 1), world.rand.nextFloat() * 360F, 0.0F);
 					world.addEntity(entityToSpawn);
 				}
 			} else if (((entity.getHorizontalFacing()) == Direction.EAST)) {
 				if (!world.isRemote) {
-					Entity entityToSpawn = new VitaAppleGreenTeaEntityEntity.CustomEntity(VitaAppleGreenTeaEntityEntity.entity, world);
+					Entity entityToSpawn = new HFTPassionFruitEntityEntity.CustomEntity(HFTPassionFruitEntityEntity.entity, world);
 					entityToSpawn.setLocationAndAngles((x + 1), (y + 1), (z), world.rand.nextFloat() * 360F, 0.0F);
 					world.addEntity(entityToSpawn);
 				}
 			} else if (((entity.getHorizontalFacing()) == Direction.WEST)) {
 				if (!world.isRemote) {
-					Entity entityToSpawn = new VitaAppleGreenTeaEntityEntity.CustomEntity(VitaAppleGreenTeaEntityEntity.entity, world);
+					Entity entityToSpawn = new HFTPassionFruitEntityEntity.CustomEntity(HFTPassionFruitEntityEntity.entity, world);
 					entityToSpawn.setLocationAndAngles((x - 1), (y + 1), (z), world.rand.nextFloat() * 360F, 0.0F);
 					world.addEntity(entityToSpawn);
 				}

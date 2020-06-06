@@ -34,15 +34,15 @@ import net.minecraft.client.renderer.entity.model.RendererModel;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 
-import net.mcreator.hongkongdrinks.procedures.TaoTiHoneyGreenTeaEntityEntityIsHurtProcedure;
-import net.mcreator.hongkongdrinks.item.TaoTiHoneyGreenTeaItem;
+import net.mcreator.hongkongdrinks.procedures.HFTPassionFruitEntityEntityIsHurtProcedure;
+import net.mcreator.hongkongdrinks.item.HFTPassionFruitItem;
 import net.mcreator.hongkongdrinks.HongkongdrinksModElements;
 
 @HongkongdrinksModElements.ModElement.Tag
-public class TaoTiHoneyGreenTeaEntityEntity extends HongkongdrinksModElements.ModElement {
+public class HFTPassionFruitEntityEntity extends HongkongdrinksModElements.ModElement {
 	public static EntityType entity = null;
-	public TaoTiHoneyGreenTeaEntityEntity(HongkongdrinksModElements instance) {
-		super(instance, 44);
+	public HFTPassionFruitEntityEntity(HongkongdrinksModElements instance) {
+		super(instance, 166);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -50,7 +50,7 @@ public class TaoTiHoneyGreenTeaEntityEntity extends HongkongdrinksModElements.Mo
 	public void initElements() {
 		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE).setShouldReceiveVelocityUpdates(true)
 				.setTrackingRange(100).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire().size(0.2f, 0.5f))
-						.build("tao_ti_honey_green_tea_entity").setRegistryName("tao_ti_honey_green_tea_entity");
+						.build("hft_passion_fruit_entity").setRegistryName("hft_passion_fruit_entity");
 		elements.entities.add(() -> entity);
 	}
 
@@ -67,10 +67,10 @@ public class TaoTiHoneyGreenTeaEntityEntity extends HongkongdrinksModElements.Mo
 	@OnlyIn(Dist.CLIENT)
 	public void registerModels(ModelRegistryEvent event) {
 		RenderingRegistry.registerEntityRenderingHandler(CustomEntity.class, renderManager -> {
-			return new MobRenderer(renderManager, new Modelvitalemontea1(), 0.05f) {
+			return new MobRenderer(renderManager, new Modelhungfooktonge(), 0.05f) {
 				@Override
 				protected ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("hongkongdrinks:textures/taotigreentea_e.png");
+					return new ResourceLocation("hongkongdrinks:textures/hftpassionfruit_e.png");
 				}
 			};
 		});
@@ -105,7 +105,7 @@ public class TaoTiHoneyGreenTeaEntityEntity extends HongkongdrinksModElements.Mo
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
 			super.dropSpecialItems(source, looting, recentlyHitIn);
-			this.entityDropItem(new ItemStack(TaoTiHoneyGreenTeaItem.block, (int) (1)));
+			this.entityDropItem(new ItemStack(HFTPassionFruitItem.block, (int) (1)));
 		}
 
 		@Override
@@ -142,7 +142,7 @@ public class TaoTiHoneyGreenTeaEntityEntity extends HongkongdrinksModElements.Mo
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				TaoTiHoneyGreenTeaEntityEntityIsHurtProcedure.executeProcedure($_dependencies);
+				HFTPassionFruitEntityEntityIsHurtProcedure.executeProcedure($_dependencies);
 			}
 			if (source.getImmediateSource() instanceof ArrowEntity)
 				return false;
@@ -174,17 +174,18 @@ public class TaoTiHoneyGreenTeaEntityEntity extends HongkongdrinksModElements.Mo
 		}
 	}
 
-	// Made with Blockbench 3.5.2
+	// Made with Blockbench 3.5.4
 	// Exported for Minecraft version 1.14
 	// Paste this class into your mod and generate all required imports
-	public static class Modelvitalemontea1 extends EntityModel {
+	public static class Modelhungfooktonge extends EntityModel {
 		private final RendererModel bone;
-		public Modelvitalemontea1() {
-			textureWidth = 16;
-			textureHeight = 16;
+		public Modelhungfooktonge() {
+			textureWidth = 20;
+			textureHeight = 20;
 			bone = new RendererModel(this);
 			bone.setRotationPoint(0.0F, 24.0F, 0.0F);
-			bone.cubeList.add(new ModelBox(bone, 0, 0, -2.0F, -6.0F, -1.0F, 4, 6, 2, 0.0F, false));
+			bone.cubeList.add(new ModelBox(bone, 0, 0, -2.0F, -11.0F, -2.0F, 4, 11, 4, 0.0F, false));
+			bone.cubeList.add(new ModelBox(bone, 0, 16, -1.0F, -13.0F, -1.0F, 2, 2, 2, 0.0F, false));
 		}
 
 		@Override

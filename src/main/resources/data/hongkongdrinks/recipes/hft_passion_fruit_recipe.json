@@ -1,0 +1,28 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "minecraft:light_blue_dye"
+    },
+    {
+      "tag": "forge:sugar"
+    },
+    {
+      "tag": "forge:fruits/passionfruit"
+    },
+    {
+      "tag": "forge:fruits/pineapple"
+    },
+    {
+      "tag": "forge:fruits/mango"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:hft_passion_fruit",
+    "count": 1
+  }
+}
