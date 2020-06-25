@@ -128,7 +128,7 @@
       "type": "procedure",
       "sortid": 10,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "vita_lemon_tea_on_food_right_clicked",
       "metadata": {
@@ -2981,6 +2981,15 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "hft_passion_fruit_recipe"
+    },
+    {
+      "name": "DrinkPlaced",
+      "type": "code",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "drink_placed"
     }
   ],
   "variable_elements": [],

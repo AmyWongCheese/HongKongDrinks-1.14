@@ -3,6 +3,7 @@ package com.neocosplayer.hongkongdrinks.procedures;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import net.minecraft.world.World;
+import net.minecraft.util.math.RayTraceContext;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Direction;
@@ -23,31 +24,12 @@ public class VitaLemonTeaOnFoodRightClickedProcedure extends HongkongdrinksModEl
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
-		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure VitaLemonTeaOnFoodRightClicked!");
-			return;
-		}
-		if (dependencies.get("x") == null) {
-			System.err.println("Failed to load dependency x for procedure VitaLemonTeaOnFoodRightClicked!");
-			return;
-		}
-		if (dependencies.get("y") == null) {
-			System.err.println("Failed to load dependency y for procedure VitaLemonTeaOnFoodRightClicked!");
-			return;
-		}
-		if (dependencies.get("z") == null) {
-			System.err.println("Failed to load dependency z for procedure VitaLemonTeaOnFoodRightClicked!");
-			return;
-		}
-		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure VitaLemonTeaOnFoodRightClicked!");
-			return;
-		}
 		Entity entity = (Entity) dependencies.get("entity");
 		int x = (int) dependencies.get("x");
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
+		Entity entityToSpawn = new VitaLemonTeaEntityEntity.CustomEntity(VitaLemonTeaEntityEntity.entity, world);
 		if ((((entity.isSneaking()) && (new ItemStack(VitaLemonTeaItem.block, (int) (1))
 				.getItem() == ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem()))
 				|| ((new ItemStack(VitaLemonTeaItem.block, (int) (1))
@@ -61,31 +43,9 @@ public class VitaLemonTeaOnFoodRightClickedProcedure extends HongkongdrinksModEl
 			world.playSound((PlayerEntity) null, x, y, z,
 					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wood.place")),
 					SoundCategory.NEUTRAL, (float) 1, (float) 1);
-			if (((entity.getHorizontalFacing()) == Direction.NORTH)) {
-				if (!world.isRemote) {
-					Entity entityToSpawn = new VitaLemonTeaEntityEntity.CustomEntity(VitaLemonTeaEntityEntity.entity, world);
-					entityToSpawn.setLocationAndAngles((x + 0.5), (y + 1), (z - 0.5), world.rand.nextFloat() * 360F, 0);
-					world.addEntity(entityToSpawn);
-				}
-			} else if (((entity.getHorizontalFacing()) == Direction.SOUTH)) {
-				if (!world.isRemote) {
-					Entity entityToSpawn = new VitaLemonTeaEntityEntity.CustomEntity(VitaLemonTeaEntityEntity.entity, world);
-					entityToSpawn.setLocationAndAngles((x + 0.5), (y + 1), (z + 1.5), world.rand.nextFloat() * 360F, 0);
-					world.addEntity(entityToSpawn);
-				}
-			} else if (((entity.getHorizontalFacing()) == Direction.EAST)) {
-				if (!world.isRemote) {
-					Entity entityToSpawn = new VitaLemonTeaEntityEntity.CustomEntity(VitaLemonTeaEntityEntity.entity, world);
-					entityToSpawn.setLocationAndAngles((x + 1.5), (y + 1), (z + 0.5), world.rand.nextFloat() * 360F, 0);
-					world.addEntity(entityToSpawn);
-				}
-			} else if (((entity.getHorizontalFacing()) == Direction.WEST)) {
-				if (!world.isRemote) {
-					Entity entityToSpawn = new VitaLemonTeaEntityEntity.CustomEntity(VitaLemonTeaEntityEntity.entity, world);
-					entityToSpawn.setLocationAndAngles((x - 0.5), (y + 1), (z + 0.5), world.rand.nextFloat() * 360F, 0);
-					world.addEntity(entityToSpawn);
-				}
-			}
+
+			DrinkPlaced.place(entity, world, entityToSpawn);
+
 		}
 	}
 }
