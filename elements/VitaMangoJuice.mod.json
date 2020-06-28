@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "vitamango",
+    "texture": "vitamango_item",
     "customModelName": "vitalemon:vitamango",
     "name": "Vita Mango Juice",
     "specialInfo": [],

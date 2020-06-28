@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "vitahoneylime",
+    "texture": "vitahoneylime_item",
     "customModelName": "vitalemon:vitahoneylime",
     "name": "Vita Honey Lime Drink",
     "specialInfo": [],

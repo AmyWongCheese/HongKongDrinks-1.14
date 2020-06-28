@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "ygcoconutmilk",
+    "texture": "ygcoconutmilk_item",
     "customModelName": "vitalemon:ygcoconutmilk",
     "name": "Yeung Gwong Coconut Soya Milk",
     "specialInfo": [],

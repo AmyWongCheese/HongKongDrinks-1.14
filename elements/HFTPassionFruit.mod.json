@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "hftpassionfruit",
+    "texture": "hftpassionfruit_item",
     "customModelName": "hungfooktong:default",
     "name": "Hung Fook Tong Passion Fruit with Honey Drink",
     "specialInfo": [],

@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "ygpeachtea",
+    "texture": "ygpeachtea_item",
     "customModelName": "vitalemon:ygpeachtea",
     "name": "Yeung Gwong Peach Tea",
     "specialInfo": [],

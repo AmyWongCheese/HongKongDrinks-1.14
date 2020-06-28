@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "ygapplejuice",
+    "texture": "ygapplejuice_item",
     "customModelName": "vitalemon:ygapplejuice",
     "name": "Yeung Gwong Apple Juice",
     "specialInfo": [],

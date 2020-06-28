@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "yglemontea",
+    "texture": "yglemontea_item",
     "customModelName": "vitalemon:yglemontea",
     "name": "Yeung Gwong Lemon Tea",
     "specialInfo": [],

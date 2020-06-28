@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "vitablackcurrantjuice",
+    "texture": "vitablackcurrantjuice_item",
     "customModelName": "vitalemon:vitablackcurrantjuice",
     "name": "Vita Blackcurrant Juice",
     "specialInfo": [],

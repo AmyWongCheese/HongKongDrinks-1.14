@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "taotiwhiteteabottle",
+    "texture": "taotiwhiteteabottle_item",
     "customModelName": "taotigreenteabottle1:taotiwhiteteabottle",
     "name": "Tao Ti Supreme White Tea",
     "specialInfo": [],

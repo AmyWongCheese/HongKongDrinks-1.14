@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "mandarintea",
+    "texture": "mandarintea_item",
     "customModelName": "vitalemon:mandarintea",
     "name": "Yeung Gwong Mandarin Tea",
     "specialInfo": [],

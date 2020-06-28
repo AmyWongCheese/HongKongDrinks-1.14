@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "taotigreentea",
+    "texture": "taotigreentea_item",
     "customModelName": "vitalemon:taotigreentea",
     "name": "Tao Ti Honey Green Tea",
     "specialInfo": [],

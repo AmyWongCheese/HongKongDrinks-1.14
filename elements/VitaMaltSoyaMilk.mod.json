@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "vitamaltsoyamilk",
+    "texture": "vitamaltsoyamilk_item",
     "customModelName": "vitalemon:vitamaltsoyamilk",
     "name": "Vita Malted Soya Milk",
     "specialInfo": [],

@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "vitact",
+    "texture": "vitact_item",
     "customModelName": "vitalemon:vitact",
     "name": "Vita Chrysanthemum Tea",
     "specialInfo": [],

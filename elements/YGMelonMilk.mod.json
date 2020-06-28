@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "ygmelonmilk",
+    "texture": "ygmelonmilk_item",
     "customModelName": "vitalemon:ygmelonmilk",
     "name": "Yeung Gwong Melon Soya Milk",
     "specialInfo": [],

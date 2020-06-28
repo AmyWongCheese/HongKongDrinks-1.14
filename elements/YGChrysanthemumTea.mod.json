@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "ygct",
+    "texture": "ygct_item",
     "customModelName": "vitalemon:ygct",
     "name": "Yeung Gwong Chrysanthemum Tea",
     "specialInfo": [],

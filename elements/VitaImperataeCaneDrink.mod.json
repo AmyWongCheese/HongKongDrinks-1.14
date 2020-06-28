@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "vitaimperatae",
+    "texture": "vitaimperatae_item",
     "customModelName": "vitalemon:vitaimperatae",
     "name": "Vita Imperatae Cane Drink",
     "specialInfo": [],

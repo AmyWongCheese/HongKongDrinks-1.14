@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "applegreentea",
+    "texture": "applegreentea_item",
     "customModelName": "vitalemon:applegreentea",
     "name": "Vita Apple Green Tea",
     "specialInfo": [],

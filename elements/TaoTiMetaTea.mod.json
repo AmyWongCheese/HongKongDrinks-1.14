@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "taotimetatea",
+    "texture": "taotimetatea_item",
     "customModelName": "vitalemon:taotimetatea",
     "name": "Tao Ti Supreme Meta Tea",
     "specialInfo": [],

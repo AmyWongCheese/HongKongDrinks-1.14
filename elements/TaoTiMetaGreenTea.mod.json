@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 1,
-    "texture": "taotigreenteabottle1",
+    "texture": "taotigreenteabottle_item",
     "customModelName": "taotigreenteabottle1:default",
     "name": "Tao Ti Supreme Meta Green Tea",
     "specialInfo": [],
