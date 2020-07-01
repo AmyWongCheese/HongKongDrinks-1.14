@@ -16,6 +16,9 @@
     },
     {
       "tag": "forge:fruits/lemon"
+    },
+    {
+      "tag": "forge:water"
     }
   ],
   "result": {

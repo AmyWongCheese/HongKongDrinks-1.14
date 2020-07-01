@@ -13,6 +13,9 @@
     },
     {
       "tag": "forge:crops/barley"
+    },
+    {
+      "tag": "forge:water"
     }
   ],
   "result": {

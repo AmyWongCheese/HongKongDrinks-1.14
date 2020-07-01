@@ -13,6 +13,9 @@
     },
     {
       "tag": "forge:crops/tealeaf"
+    },
+    {
+      "tag": "forge:water"
     }
   ],
   "result": {

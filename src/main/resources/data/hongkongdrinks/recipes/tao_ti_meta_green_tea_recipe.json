@@ -13,6 +13,9 @@
     },
     {
       "tag": "forge:grain"
+    },
+    {
+      "tag": "forge:water"
     }
   ],
   "result": {

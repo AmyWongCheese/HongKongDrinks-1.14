@@ -13,6 +13,9 @@
     },
     {
       "tag": "forge:fruits/mango"
+    },
+    {
+      "tag": "forge:water"
     }
   ],
   "result": {

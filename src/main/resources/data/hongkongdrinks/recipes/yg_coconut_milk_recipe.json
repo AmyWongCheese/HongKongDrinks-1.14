@@ -16,6 +16,9 @@
     },
     {
       "tag": "forge:crops/soybean"
+    },
+    {
+      "tag": "forge:water"
     }
   ],
   "result": {

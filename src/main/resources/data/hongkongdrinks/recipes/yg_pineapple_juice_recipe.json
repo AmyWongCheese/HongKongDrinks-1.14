@@ -13,6 +13,9 @@
     },
     {
       "tag": "forge:fruits/pineapple"
+    },
+    {
+      "tag": "forge:water"
     }
   ],
   "result": {
