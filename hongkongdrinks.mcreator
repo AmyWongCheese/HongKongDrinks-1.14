@@ -3083,6 +3083,99 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "vita_choco_soya_milk_recipe"
+    },
+    {
+      "name": "VitaCoconutSoyaMilk",
+      "type": "food",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vita_coconut_soya_milk"
+    },
+    {
+      "name": "VitaCoconutSoyaMilkEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vita_coconut_soya_milk_entity_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaCoconutSoyaMilkEntity",
+      "type": "mob",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vita_coconut_soya_milk_entity"
+    },
+    {
+      "name": "VitaCoconutSoyaMilkOnFoodRightClicked",
+      "type": "procedure",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "vita_coconut_soya_milk_on_food_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaCoconutSoyaMilkRecipe",
+      "type": "recipe",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "vita_coconut_soya_milk_recipe"
     }
   ],
   "variable_elements": [],
@@ -3097,8 +3190,10 @@
       "item.hongkongdrinks.yg_peach_tea": "陽光蜜桃茶",
       "entity.hongkongdrinks.vita_malt_soya_milk_entity": "維他麥精豆奶",
       "item.hongkongdrinks.healthworks_hawhorn_apple_drink": "健康工房山楂蘋果",
+      "item.hongkongdrinks.vita_coconut_soya_milk": "Vita Coconut Soya Milk",
       "item.hongkongdrinks.yg_mango_juice_entity": "Yeung Gwong Mango Juice Spawn Egg",
       "item.hongkongdrinks.vita_imperatae_cane_drink_entity": "Vita Imperatae Cane Drink Spawn Egg",
+      "item.hongkongdrinks.vita_coconut_soya_milk_entity": "Vita Coconut Soya Milk Spawn Egg",
       "entity.hongkongdrinks.tao_ti_honey_green_tea_entity": "道地蜂蜜綠茶",
       "item.hongkongdrinks.tao_ti_white_tea_entity": "Tao Ti Supreme White Tea Spawn Egg",
       "item.hongkongdrinks.tao_ti_meta_green_tea": "道地極品解綠茶",
@@ -3157,6 +3252,7 @@
       "item.hongkongdrinks.yg_lemon_tea_entity": "Yeung Gwong Lemon Tea Spawn Egg",
       "entity.hongkongdrinks.yg_peach_tea_entity": "陽光蜜桃茶",
       "item.hongkongdrinks.vita_guava_juice": "維他番石榴汁",
+      "entity.hongkongdrinks.vita_coconut_soya_milk_entity": "Vita Coconut Soya Milk",
       "item.hongkongdrinks.yg_apple_juice": "陽光蘋果汁",
       "item.hongkongdrinks.vita_mango_juice_entity": "Vita Mango Juice Spawn Egg",
       "item.hongkongdrinks.vita_blackcurrant_juice_entity": "Vita Blackcurrant Juice Spawn Egg",
@@ -3196,8 +3292,10 @@
       "item.hongkongdrinks.yg_peach_tea": "Yeung Gwong Peach Tea",
       "entity.hongkongdrinks.vita_malt_soya_milk_entity": "Vita Malted Soya Milk",
       "item.hongkongdrinks.healthworks_hawhorn_apple_drink": "Healthworks Hawhorn Apple Drink",
+      "item.hongkongdrinks.vita_coconut_soya_milk": "Vita Coconut Soya Milk",
       "item.hongkongdrinks.yg_mango_juice_entity": "Yeung Gwong Mango Juice Spawn Egg",
       "item.hongkongdrinks.vita_imperatae_cane_drink_entity": "Vita Imperatae Cane Drink Spawn Egg",
+      "item.hongkongdrinks.vita_coconut_soya_milk_entity": "Vita Coconut Soya Milk Spawn Egg",
       "entity.hongkongdrinks.tao_ti_honey_green_tea_entity": "Tao Ti Honey Green Tea",
       "item.hongkongdrinks.tao_ti_white_tea_entity": "Tao Ti Supreme White Tea Spawn Egg",
       "item.hongkongdrinks.tao_ti_meta_green_tea": "Tao Ti Supreme Meta Green Tea",
@@ -3256,6 +3354,7 @@
       "item.hongkongdrinks.yg_lemon_tea_entity": "Yeung Gwong Lemon Tea Spawn Egg",
       "entity.hongkongdrinks.yg_peach_tea_entity": "Yeung Gwong Peach Tea",
       "item.hongkongdrinks.vita_guava_juice": "Vita Guava Juice",
+      "entity.hongkongdrinks.vita_coconut_soya_milk_entity": "Vita Coconut Soya Milk",
       "item.hongkongdrinks.yg_apple_juice": "Yeung Gwong Apple Juice",
       "item.hongkongdrinks.vita_mango_juice_entity": "Vita Mango Juice Spawn Egg",
       "item.hongkongdrinks.vita_blackcurrant_juice_entity": "Vita Blackcurrant Juice Spawn Egg",

@@ -173,6 +173,12 @@
         "0": "vitachocosoya"
       },
       "name": "vitachocosoya"
+    },
+    "vitacoconutmilk": {
+      "map": {
+        "0": "vitacoconutmilk"
+      },
+      "name": "vitacoconutmilk"
     }
   }
 }
