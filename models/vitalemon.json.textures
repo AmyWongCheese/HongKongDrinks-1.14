@@ -179,6 +179,12 @@
         "0": "vitacoconutmilk"
       },
       "name": "vitacoconutmilk"
+    },
+    "vitavanillamilk": {
+      "map": {
+        "0": "vitavanillamilk"
+      },
+      "name": "vitavanillamilk"
     }
   }
 }
