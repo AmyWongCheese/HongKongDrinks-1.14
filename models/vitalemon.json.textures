@@ -185,6 +185,12 @@
         "0": "vitavanillamilk"
       },
       "name": "vitavanillamilk"
+    },
+    "vitamintchoco": {
+      "map": {
+        "0": "vitamintchoco"
+      },
+      "name": "vitamintchoco"
     }
   }
 }
