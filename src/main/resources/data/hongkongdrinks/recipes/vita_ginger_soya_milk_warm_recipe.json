@@ -1,0 +1,12 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:campfire_cooking",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "hongkongdrinks:vita_ginger_soya_milk"
+  },
+  "result": {
+    "item": "hongkongdrinks:vita_ginger_soya_milk_warm"
+  }
+}

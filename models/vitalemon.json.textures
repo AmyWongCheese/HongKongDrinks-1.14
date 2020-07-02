@@ -191,6 +191,12 @@
         "0": "vitamintchoco"
       },
       "name": "vitamintchoco"
+    },
+    "vitagingermilk": {
+      "map": {
+        "0": "vitagingermilk"
+      },
+      "name": "vitagingermilk"
     }
   }
 }

@@ -1,0 +1,28 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:white_dye"
+    },
+    {
+      "tag": "forge:sugar"
+    },
+    {
+      "tag": "forge:crops/ginger"
+    },
+    {
+      "tag": "forge:crops/soybean"
+    },
+    {
+      "tag": "forge:water"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:vita_ginger_soya_milk",
+    "count": 1
+  }
+}
