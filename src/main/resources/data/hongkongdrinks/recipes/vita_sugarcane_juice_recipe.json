@@ -1,0 +1,25 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:lime_dye"
+    },
+    {
+      "tag": "forge:sugar"
+    },
+    {
+      "item": "minecraft:sugar_cane"
+    },
+    {
+      "tag": "forge:water"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:vita_sugarcane_juice",
+    "count": 1
+  }
+}

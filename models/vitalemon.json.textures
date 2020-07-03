@@ -197,6 +197,12 @@
         "0": "vitagingermilk"
       },
       "name": "vitagingermilk"
+    },
+    "vitasugarcane": {
+      "map": {
+        "0": "vitasugarcane"
+      },
+      "name": "vitasugarcane"
     }
   }
 }
