@@ -209,6 +209,12 @@
         "0": "vitaicygrapefruit"
       },
       "name": "vitaicygrapefruit"
+    },
+    "ygsugarcane": {
+      "map": {
+        "0": "ygsugarcane"
+      },
+      "name": "ygsugarcane"
     }
   }
 }

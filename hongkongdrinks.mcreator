@@ -3676,6 +3676,99 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "vita_icy_grapefruit_recipe"
+    },
+    {
+      "name": "YGSugarcaneJuice",
+      "type": "food",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "yg_sugarcane_juice"
+    },
+    {
+      "name": "YGSugarcaneJuiceEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 202,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "yg_sugarcane_juice_entity_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "YGSugarcaneJuiceEntity",
+      "type": "mob",
+      "sortid": 202,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "yg_sugarcane_juice_entity"
+    },
+    {
+      "name": "YGSugarcaneJuiceOnFoodRightClicked",
+      "type": "procedure",
+      "sortid": 203,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "yg_sugarcane_juice_on_food_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "YGSugarcaneJuiceRecipe",
+      "type": "recipe",
+      "sortid": 204,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "yg_sugarcane_juice_recipe"
     }
   ],
   "variable_elements": [],
@@ -3702,6 +3795,8 @@
       "entity.hongkongdrinks.vita_vanilla_soya_milk_entity": "Vita Vanilla Soya Milk",
       "item.hongkongdrinks.vita_chrysanthemum_tea_entity": "Vita Chrysanthemum Tea Spawn Egg",
       "item.hongkongdrinks.tao_ti_meta_green_tea": "道地極品解綠茶",
+      "item.hongkongdrinks.yg_sugarcane_juice": "Yeung Gwong Sugarcane Juice",
+      "item.hongkongdrinks.yg_sugarcane_juice_entity": "Yeung Gwong Sugarcane Juice Spawn Egg",
       "item.hongkongdrinks.vita_lemon_tea_entity": "Vita Lemon Tea Spawn Egg",
       "entity.hongkongdrinks.vita_blackcurrant_juice_entity": "維他黑加侖子汁",
       "entity.hongkongdrinks.vita_lemon_tea_entity": "維他檸檬茶",
@@ -3755,6 +3850,7 @@
       "item.hongkongdrinks.vita_vanilla_soya_milk_entity": "Vita Vanilla Soya Milk Spawn Egg",
       "item.hongkongdrinks.vita_honey_lime_entity": "Vita Honey Lime Drink Spawn Egg",
       "item.hongkongdrinks.yg_orange_juice_entity": "Yeung Gwong Orange Juice Spawn Egg",
+      "entity.hongkongdrinks.yg_sugarcane_juice_entity": "Yeung Gwong Sugarcane Juice",
       "item.hongkongdrinks.vita_honey_lime_drink": "清心棧冬蜜青檸",
       "entity.hongkongdrinks.yg_mango_juice_entity": "陽光芒果汁",
       "item.hongkongdrinks.vita_chrysanthemum_tea": "維他菊花茶",
@@ -3820,6 +3916,8 @@
       "entity.hongkongdrinks.vita_vanilla_soya_milk_entity": "Vita Vanilla Soya Milk",
       "item.hongkongdrinks.vita_chrysanthemum_tea_entity": "Vita Chrysanthemum Tea Spawn Egg",
       "item.hongkongdrinks.tao_ti_meta_green_tea": "Tao Ti Supreme Meta Green Tea",
+      "item.hongkongdrinks.yg_sugarcane_juice": "Yeung Gwong Sugarcane Juice",
+      "item.hongkongdrinks.yg_sugarcane_juice_entity": "Yeung Gwong Sugarcane Juice Spawn Egg",
       "item.hongkongdrinks.vita_lemon_tea_entity": "Vita Lemon Tea Spawn Egg",
       "entity.hongkongdrinks.vita_blackcurrant_juice_entity": "Vita Blackcurrant Juice",
       "entity.hongkongdrinks.vita_lemon_tea_entity": "Vita Lemon Tea",
@@ -3873,6 +3971,7 @@
       "item.hongkongdrinks.vita_vanilla_soya_milk_entity": "Vita Vanilla Soya Milk Spawn Egg",
       "item.hongkongdrinks.vita_honey_lime_entity": "Vita Honey Lime Drink Spawn Egg",
       "item.hongkongdrinks.yg_orange_juice_entity": "Yeung Gwong Orange Juice Spawn Egg",
+      "entity.hongkongdrinks.yg_sugarcane_juice_entity": "Yeung Gwong Sugarcane Juice",
       "item.hongkongdrinks.vita_honey_lime_drink": "Vita Honey Lime Drink",
       "entity.hongkongdrinks.yg_mango_juice_entity": "Yeung Gwong Mango Juice",
       "item.hongkongdrinks.vita_chrysanthemum_tea": "Vita Chrysanthemum Tea",
