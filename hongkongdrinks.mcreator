@@ -3769,6 +3769,99 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "yg_sugarcane_juice_recipe"
+    },
+    {
+      "name": "YGHoneyLycheeTea",
+      "type": "food",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "yg_honey_lychee_tea"
+    },
+    {
+      "name": "YGHoneyLycheeTeaEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 206,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "yg_honey_lychee_tea_entity_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "YGHoneyLycheeTeaEntity",
+      "type": "mob",
+      "sortid": 206,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "yg_honey_lychee_tea_entity"
+    },
+    {
+      "name": "YGHoneyLycheeTeaOnFoodRightClicked",
+      "type": "procedure",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "yg_honey_lychee_tea_on_food_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "YGHoneyLycheeTeaRecipe",
+      "type": "recipe",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "yg_honey_lychee_tea_recipe"
     }
   ],
   "variable_elements": [],
@@ -3777,6 +3870,7 @@
     "zh_tw": {
       "item.hongkongdrinks.yg_lemon_tea": "陽光檸檬茶",
       "entity.hongkongdrinks.vita_choco_soya_milk_entity": "Vita Chocolate Soya Milk",
+      "item.hongkongdrinks.yg_honey_lychee_tea_entity": "Yeung Gwong Honey Lychee Tea Spawn Egg",
       "item.hongkongdrinks.tao_ti_grape_juice_entity": "Tao Ti Kyoho Grape Juice Spawn Egg",
       "entity.hongkongdrinks.yg_coconut_milk_entity": "陽光椰子豆奶",
       "entity.hongkongdrinks.tao_ti_white_tea_entity": "道地極品白茶",
@@ -3796,12 +3890,14 @@
       "item.hongkongdrinks.vita_chrysanthemum_tea_entity": "Vita Chrysanthemum Tea Spawn Egg",
       "item.hongkongdrinks.tao_ti_meta_green_tea": "道地極品解綠茶",
       "item.hongkongdrinks.yg_sugarcane_juice": "Yeung Gwong Sugarcane Juice",
+      "item.hongkongdrinks.yg_honey_lychee_tea": "Yeung Gwong Honey Lychee Tea",
       "item.hongkongdrinks.yg_sugarcane_juice_entity": "Yeung Gwong Sugarcane Juice Spawn Egg",
       "item.hongkongdrinks.vita_lemon_tea_entity": "Vita Lemon Tea Spawn Egg",
       "entity.hongkongdrinks.vita_blackcurrant_juice_entity": "維他黑加侖子汁",
       "entity.hongkongdrinks.vita_lemon_tea_entity": "維他檸檬茶",
       "item.hongkongdrinks.yg_orange_juice": "陽光橙汁",
       "item.hongkongdrinks.vita_guava_juice_entity": "Vita Guava Juice Spawn Egg",
+      "entity.hongkongdrinks.yg_honey_lychee_tea_entity": "Yeung Gwong Honey Lychee Tea",
       "entity.hongkongdrinks.tao_ti_mandarin_lemon_entity": "道地柑桔檸檬",
       "item.hongkongdrinks.tao_ti_white_tea": "道地極品白茶",
       "item.hongkongdrinks.yg_mandarin_tea_entity": "Yeung Gwong Mandarin Tea Spawn Egg",
@@ -3898,6 +3994,7 @@
     "en_us": {
       "item.hongkongdrinks.yg_lemon_tea": "Yeung Gwong Lemon Tea",
       "entity.hongkongdrinks.vita_choco_soya_milk_entity": "Vita Chocolate Soya Milk",
+      "item.hongkongdrinks.yg_honey_lychee_tea_entity": "Yeung Gwong Honey Lychee Tea Spawn Egg",
       "item.hongkongdrinks.tao_ti_grape_juice_entity": "Tao Ti Kyoho Grape Juice Spawn Egg",
       "entity.hongkongdrinks.yg_coconut_milk_entity": "Yeung Gwong Coconut Soya Milk",
       "entity.hongkongdrinks.tao_ti_white_tea_entity": "Tao Ti Supreme White Tea",
@@ -3917,12 +4014,14 @@
       "item.hongkongdrinks.vita_chrysanthemum_tea_entity": "Vita Chrysanthemum Tea Spawn Egg",
       "item.hongkongdrinks.tao_ti_meta_green_tea": "Tao Ti Supreme Meta Green Tea",
       "item.hongkongdrinks.yg_sugarcane_juice": "Yeung Gwong Sugarcane Juice",
+      "item.hongkongdrinks.yg_honey_lychee_tea": "Yeung Gwong Honey Lychee Tea",
       "item.hongkongdrinks.yg_sugarcane_juice_entity": "Yeung Gwong Sugarcane Juice Spawn Egg",
       "item.hongkongdrinks.vita_lemon_tea_entity": "Vita Lemon Tea Spawn Egg",
       "entity.hongkongdrinks.vita_blackcurrant_juice_entity": "Vita Blackcurrant Juice",
       "entity.hongkongdrinks.vita_lemon_tea_entity": "Vita Lemon Tea",
       "item.hongkongdrinks.yg_orange_juice": "Yeung Gwong Orange Juice",
       "item.hongkongdrinks.vita_guava_juice_entity": "Vita Guava Juice Spawn Egg",
+      "entity.hongkongdrinks.yg_honey_lychee_tea_entity": "Yeung Gwong Honey Lychee Tea",
       "entity.hongkongdrinks.tao_ti_mandarin_lemon_entity": "Tao Ti Mandarin Lemon",
       "item.hongkongdrinks.tao_ti_white_tea": "Tao Ti Supreme White Tea",
       "item.hongkongdrinks.yg_mandarin_tea_entity": "Yeung Gwong Mandarin Tea Spawn Egg",
