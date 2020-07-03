@@ -1,0 +1,31 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:light_blue_dye"
+    },
+    {
+      "tag": "forge:sugar"
+    },
+    {
+      "item": "minecraft:ice"
+    },
+    {
+      "tag": "forge:fruits/grapefruit"
+    },
+    {
+      "tag": "forge:crops/tealeaf"
+    },
+    {
+      "tag": "forge:water"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:vita_icy_grapefruit",
+    "count": 1
+  }
+}

@@ -203,6 +203,12 @@
         "0": "vitasugarcane"
       },
       "name": "vitasugarcane"
+    },
+    "vitaicygrapefruit": {
+      "map": {
+        "0": "vitaicygrapefruit"
+      },
+      "name": "vitaicygrapefruit"
     }
   }
 }
