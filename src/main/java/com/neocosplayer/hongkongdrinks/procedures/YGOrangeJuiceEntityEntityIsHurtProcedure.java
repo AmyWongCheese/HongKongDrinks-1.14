@@ -16,7 +16,7 @@ import com.neocosplayer.hongkongdrinks.HongkongdrinksModElements;
 @HongkongdrinksModElements.ModElement.Tag
 public class YGOrangeJuiceEntityEntityIsHurtProcedure extends HongkongdrinksModElements.ModElement {
 	public YGOrangeJuiceEntityEntityIsHurtProcedure(HongkongdrinksModElements instance) {
-		super(instance, 157);
+		super(instance, 167);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

@@ -23,7 +23,7 @@ public class HealthworksHawhornAppleDrinkItem extends HongkongdrinksModElements.
 	@ObjectHolder("hongkongdrinks:healthworks_hawhorn_apple_drink")
 	public static final Item block = null;
 	public HealthworksHawhornAppleDrinkItem(HongkongdrinksModElements instance) {
-		super(instance, 18);
+		super(instance, 39);
 	}
 
 	@Override

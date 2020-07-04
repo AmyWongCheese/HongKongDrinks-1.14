@@ -16,7 +16,7 @@ import com.neocosplayer.hongkongdrinks.HongkongdrinksModElements;
 @HongkongdrinksModElements.ModElement.Tag
 public class VitaLemonTeaEntityEntityIsHurtProcedure extends HongkongdrinksModElements.ModElement {
 	public VitaLemonTeaEntityEntityIsHurtProcedure(HongkongdrinksModElements instance) {
-		super(instance, 9);
+		super(instance, 53);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

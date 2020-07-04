@@ -41,7 +41,7 @@ public class VitaHoneyLimeDrinkOnFoodRightClickedProcedure extends Hongkongdrink
 			world.playSound((PlayerEntity) null, x, y, z,
 					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wood.place")),
 					SoundCategory.NEUTRAL, (float) 1, (float) 1);
-			DrinkPlaced.place(entity, world, entityToSpawn);
+			DrinkPlaced.place(entity, world, entityToSpawn);
 		}
 	}
 }

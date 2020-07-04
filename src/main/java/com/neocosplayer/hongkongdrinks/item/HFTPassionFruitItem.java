@@ -23,7 +23,7 @@ public class HFTPassionFruitItem extends HongkongdrinksModElements.ModElement {
 	@ObjectHolder("hongkongdrinks:hft_passion_fruit")
 	public static final Item block = null;
 	public HFTPassionFruitItem(HongkongdrinksModElements instance) {
-		super(instance, 165);
+		super(instance, 44);
 	}
 
 	@Override

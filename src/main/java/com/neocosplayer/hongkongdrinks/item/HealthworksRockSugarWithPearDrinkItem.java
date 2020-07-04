@@ -23,7 +23,7 @@ public class HealthworksRockSugarWithPearDrinkItem extends HongkongdrinksModElem
 	@ObjectHolder("hongkongdrinks:healthworks_rock_sugar_with_pear_drink")
 	public static final Item block = null;
 	public HealthworksRockSugarWithPearDrinkItem(HongkongdrinksModElements instance) {
-		super(instance, 23);
+		super(instance, 40);
 	}
 
 	@Override

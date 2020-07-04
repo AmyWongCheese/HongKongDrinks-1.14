@@ -23,7 +23,7 @@ public class VitaChrysanthemumTeaItem extends HongkongdrinksModElements.ModEleme
 	@ObjectHolder("hongkongdrinks:vita_chrysanthemum_tea")
 	public static final Item block = null;
 	public VitaChrysanthemumTeaItem(HongkongdrinksModElements instance) {
-		super(instance, 83);
+		super(instance, 2);
 	}
 
 	@Override

@@ -27,8 +27,7 @@ public class HealthworksRockSugarWithPearDrinkOnFoodRightClickedProcedure extend
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
-		Entity entityToSpawn = new HealthworksRockSugarWithPearEntityEntity.CustomEntity(HealthworksRockSugarWithPearEntityEntity.entity,
-							world);
+		Entity entityToSpawn = new HealthworksRockSugarWithPearEntityEntity.CustomEntity(HealthworksRockSugarWithPearEntityEntity.entity, world);
 		if ((((entity.isSneaking()) && (new ItemStack(HealthworksRockSugarWithPearDrinkItem.block, (int) (1))
 				.getItem() == ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem()))
 				|| ((new ItemStack(HealthworksRockSugarWithPearDrinkItem.block, (int) (1))

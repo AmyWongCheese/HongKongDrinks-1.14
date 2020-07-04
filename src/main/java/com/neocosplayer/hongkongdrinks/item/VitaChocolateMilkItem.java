@@ -23,7 +23,7 @@ public class VitaChocolateMilkItem extends HongkongdrinksModElements.ModElement 
 	@ObjectHolder("hongkongdrinks:vita_chocolate_milk")
 	public static final Item block = null;
 	public VitaChocolateMilkItem(HongkongdrinksModElements instance) {
-		super(instance, 78);
+		super(instance, 11);
 	}
 
 	@Override

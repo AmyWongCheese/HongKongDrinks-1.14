@@ -42,7 +42,7 @@ import com.neocosplayer.hongkongdrinks.HongkongdrinksModElements;
 public class VitaMaltSoyaMilkEntityEntity extends HongkongdrinksModElements.ModElement {
 	public static EntityType entity = null;
 	public VitaMaltSoyaMilkEntityEntity(HongkongdrinksModElements instance) {
-		super(instance, 111);
+		super(instance, 130);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
