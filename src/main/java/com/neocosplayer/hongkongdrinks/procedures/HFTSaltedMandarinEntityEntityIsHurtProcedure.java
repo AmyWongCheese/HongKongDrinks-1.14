@@ -1,11 +1,22 @@
 package com.neocosplayer.hongkongdrinks.procedures;
 
+import net.minecraft.world.World;
+import net.minecraft.world.GameType;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.item.ItemEntity;
+import net.minecraft.entity.Entity;
+import net.minecraft.client.network.play.NetworkPlayerInfo;
+import net.minecraft.client.entity.player.ClientPlayerEntity;
+import net.minecraft.client.Minecraft;
+
+import com.neocosplayer.hongkongdrinks.item.HFTSaltedMandarinItem;
+import com.neocosplayer.hongkongdrinks.HongkongdrinksModElements;
+
 @HongkongdrinksModElements.ModElement.Tag
 public class HFTSaltedMandarinEntityEntityIsHurtProcedure extends HongkongdrinksModElements.ModElement {
-
 	public HFTSaltedMandarinEntityEntityIsHurtProcedure(HongkongdrinksModElements instance) {
-		super(instance, 223);
-
+		super(instance, 220);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
@@ -29,13 +40,11 @@ public class HFTSaltedMandarinEntityEntityIsHurtProcedure extends Hongkongdrinks
 			System.err.println("Failed to load dependency world for procedure HFTSaltedMandarinEntityEntityIsHurt!");
 			return;
 		}
-
 		Entity entity = (Entity) dependencies.get("entity");
 		int x = (int) dependencies.get("x");
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
-
 		entity.remove();
 		if ((!(new Object() {
 			public boolean checkGamemode(Entity _ent) {
@@ -55,7 +64,5 @@ public class HFTSaltedMandarinEntityEntityIsHurtProcedure extends Hongkongdrinks
 				world.addEntity(entityToSpawn);
 			}
 		}
-
 	}
-
 }

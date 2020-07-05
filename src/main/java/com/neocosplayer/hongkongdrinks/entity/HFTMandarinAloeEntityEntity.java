@@ -1,14 +1,48 @@
 
 package com.neocosplayer.hongkongdrinks.entity;
 
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.fml.network.FMLPlayMessages;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.gen.Heightmap;
+import net.minecraft.world.biome.Biome;
+import net.minecraft.world.World;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.DamageSource;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.projectile.PotionEntity;
+import net.minecraft.entity.projectile.ArrowEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.passive.AnimalEntity;
+import net.minecraft.entity.ai.goal.LookAtGoal;
+import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.EntitySpawnPlacementRegistry;
+import net.minecraft.entity.EntityClassification;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.CreatureEntity;
+import net.minecraft.entity.CreatureAttribute;
+import net.minecraft.client.renderer.model.ModelBox;
+import net.minecraft.client.renderer.entity.model.RendererModel;
+import net.minecraft.client.renderer.entity.model.EntityModel;
+import net.minecraft.client.renderer.entity.MobRenderer;
+
+import com.neocosplayer.hongkongdrinks.procedures.HFTMandarinAloeEntityEntityIsHurtProcedure;
+import com.neocosplayer.hongkongdrinks.item.HFTMandarinAloeItem;
+import com.neocosplayer.hongkongdrinks.HongkongdrinksModElements;
+
 @HongkongdrinksModElements.ModElement.Tag
 public class HFTMandarinAloeEntityEntity extends HongkongdrinksModElements.ModElement {
-
 	public static EntityType entity = null;
-
 	public HFTMandarinAloeEntityEntity(HongkongdrinksModElements instance) {
 		super(instance, 221);
-
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -17,21 +51,16 @@ public class HFTMandarinAloeEntityEntity extends HongkongdrinksModElements.ModEl
 		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE).setShouldReceiveVelocityUpdates(true)
 				.setTrackingRange(100).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire().size(0.2f, 0.5f))
 						.build("hft_mandarin_aloe_entity").setRegistryName("hft_mandarin_aloe_entity");
-
 		elements.entities.add(() -> entity);
-
 	}
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
-
 			biome.getSpawns(EntityClassification.CREATURE).add(new Biome.SpawnListEntry(entity, 1, 1, 1));
 		}
-
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
 				AnimalEntity::func_223315_a);
-
 	}
 
 	@SubscribeEvent
@@ -39,18 +68,14 @@ public class HFTMandarinAloeEntityEntity extends HongkongdrinksModElements.ModEl
 	public void registerModels(ModelRegistryEvent event) {
 		RenderingRegistry.registerEntityRenderingHandler(CustomEntity.class, renderManager -> {
 			return new MobRenderer(renderManager, new Modelhungfooktonge(), 0.05f) {
-
 				@Override
 				protected ResourceLocation getEntityTexture(Entity entity) {
 					return new ResourceLocation("hongkongdrinks:textures/hftmandarinaloe_e.png");
 				}
 			};
 		});
-
 	}
-
 	public static class CustomEntity extends CreatureEntity {
-
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -59,17 +84,13 @@ public class HFTMandarinAloeEntityEntity extends HongkongdrinksModElements.ModEl
 			super(type, world);
 			experienceValue = 0;
 			setNoAI(false);
-
 			enablePersistence();
-
 		}
 
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-
 			this.goalSelector.addGoal(1, new LookAtGoal(this, PlayerEntity.class, (float) 3));
-
 		}
 
 		@Override
@@ -121,7 +142,6 @@ public class HFTMandarinAloeEntityEntity extends HongkongdrinksModElements.ModEl
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-
 				HFTMandarinAloeEntityEntityIsHurtProcedure.executeProcedure($_dependencies);
 			}
 			if (source.getImmediateSource() instanceof ArrowEntity)
@@ -142,35 +162,26 @@ public class HFTMandarinAloeEntityEntity extends HongkongdrinksModElements.ModEl
 		@Override
 		protected void registerAttributes() {
 			super.registerAttributes();
-
 			if (this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
 				this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(10);
-
 			if (this.getAttribute(SharedMonsterAttributes.MAX_HEALTH) != null)
 				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(100);
-
 			if (this.getAttribute(SharedMonsterAttributes.ARMOR) != null)
 				this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(0);
-
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_DAMAGE);
 			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(0);
-
 		}
-
 	}
 
 	// Made with Blockbench 3.5.4
 	// Exported for Minecraft version 1.14
 	// Paste this class into your mod and generate all required imports
-
 	public static class Modelhungfooktonge extends EntityModel {
 		private final RendererModel bone;
-
 		public Modelhungfooktonge() {
 			textureWidth = 20;
 			textureHeight = 20;
-
 			bone = new RendererModel(this);
 			bone.setRotationPoint(0.0F, 24.0F, 0.0F);
 			bone.cubeList.add(new ModelBox(bone, 0, 0, -2.0F, -11.0F, -2.0F, 4, 11, 4, 0.0F, false));
@@ -192,5 +203,4 @@ public class HFTMandarinAloeEntityEntity extends HongkongdrinksModElements.ModEl
 			super.setRotationAngles(e, f, f1, f2, f3, f4, f5);
 		}
 	}
-
 }

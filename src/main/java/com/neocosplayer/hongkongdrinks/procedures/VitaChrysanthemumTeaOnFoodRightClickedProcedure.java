@@ -13,7 +13,7 @@ import net.minecraft.block.Blocks;
 
 import com.neocosplayer.hongkongdrinks.item.VitaChrysanthemumTeaItem;
 import com.neocosplayer.hongkongdrinks.entity.VitaChrysanthemumTeaEntityEntity;
-import com.neocosplayer.hongkongdrinks.HongkongdrinksModElements;
+import com.neocosplayer.hongkongdrinks.HongkongdrinksModElements;
 
 @HongkongdrinksModElements.ModElement.Tag
 public class VitaChrysanthemumTeaOnFoodRightClickedProcedure extends HongkongdrinksModElements.ModElement {

@@ -13,7 +13,7 @@ import net.minecraft.block.Blocks;
 
 import com.neocosplayer.hongkongdrinks.item.TaoTiMetaTeaItem;
 import com.neocosplayer.hongkongdrinks.entity.TaoTiMetaTeaEntityEntity;
-import com.neocosplayer.hongkongdrinks.HongkongdrinksModElements;
+import com.neocosplayer.hongkongdrinks.HongkongdrinksModElements;
 
 @HongkongdrinksModElements.ModElement.Tag
 public class TaoTiMetaTeaOnFoodRightClickedProcedure extends HongkongdrinksModElements.ModElement {

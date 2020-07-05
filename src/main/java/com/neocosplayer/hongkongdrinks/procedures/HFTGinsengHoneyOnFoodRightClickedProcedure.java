@@ -18,7 +18,7 @@ import com.neocosplayer.hongkongdrinks.HongkongdrinksModElements;
 @HongkongdrinksModElements.ModElement.Tag
 public class HFTGinsengHoneyOnFoodRightClickedProcedure extends HongkongdrinksModElements.ModElement {
 	public HFTGinsengHoneyOnFoodRightClickedProcedure(HongkongdrinksModElements instance) {
-		super(instance, 211);
+		super(instance, 219);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

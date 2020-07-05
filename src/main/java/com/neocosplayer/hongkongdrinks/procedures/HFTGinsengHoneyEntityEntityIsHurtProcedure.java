@@ -1,11 +1,22 @@
 package com.neocosplayer.hongkongdrinks.procedures;
 
+import net.minecraft.world.World;
+import net.minecraft.world.GameType;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.item.ItemEntity;
+import net.minecraft.entity.Entity;
+import net.minecraft.client.network.play.NetworkPlayerInfo;
+import net.minecraft.client.entity.player.ClientPlayerEntity;
+import net.minecraft.client.Minecraft;
+
+import com.neocosplayer.hongkongdrinks.item.HFTGinsengHoneyItem;
+import com.neocosplayer.hongkongdrinks.HongkongdrinksModElements;
+
 @HongkongdrinksModElements.ModElement.Tag
 public class HFTGinsengHoneyEntityEntityIsHurtProcedure extends HongkongdrinksModElements.ModElement {
-
 	public HFTGinsengHoneyEntityEntityIsHurtProcedure(HongkongdrinksModElements instance) {
-		super(instance, 217);
-
+		super(instance, 226);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
@@ -29,13 +40,11 @@ public class HFTGinsengHoneyEntityEntityIsHurtProcedure extends HongkongdrinksMo
 			System.err.println("Failed to load dependency world for procedure HFTGinsengHoneyEntityEntityIsHurt!");
 			return;
 		}
-
 		Entity entity = (Entity) dependencies.get("entity");
 		int x = (int) dependencies.get("x");
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
-
 		entity.remove();
 		if ((!(new Object() {
 			public boolean checkGamemode(Entity _ent) {
@@ -55,7 +64,5 @@ public class HFTGinsengHoneyEntityEntityIsHurtProcedure extends HongkongdrinksMo
 				world.addEntity(entityToSpawn);
 			}
 		}
-
 	}
-
 }
