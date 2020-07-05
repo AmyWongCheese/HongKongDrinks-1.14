@@ -1,0 +1,28 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "minecraft:orange_dye"
+    },
+    {
+      "tag": "forge:sugar"
+    },
+    {
+      "tag": "forge:salt"
+    },
+    {
+      "tag": "forge:fruits/mandarin"
+    },
+    {
+      "tag": "forge:water"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:hft_salted_mandarin",
+    "count": 1
+  }
+}

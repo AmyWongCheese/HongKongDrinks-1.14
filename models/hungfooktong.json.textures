@@ -5,6 +5,24 @@
         "0": "hftpassionfruit"
       },
       "name": "default"
+    },
+    "hftginsenghoney": {
+      "map": {
+        "0": "hftginsenghoney"
+      },
+      "name": "hftginsenghoney"
+    },
+    "hftmandarinaloe": {
+      "map": {
+        "0": "hftmandarinaloe"
+      },
+      "name": "hftmandarinaloe"
+    },
+    "hftsaltmandarin": {
+      "map": {
+        "0": "hftsaltmandarin"
+      },
+      "name": "hftsaltmandarin"
     }
   }
 }

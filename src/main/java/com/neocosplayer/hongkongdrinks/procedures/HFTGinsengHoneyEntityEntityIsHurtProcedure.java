@@ -1,0 +1,61 @@
+package com.neocosplayer.hongkongdrinks.procedures;
+
+@HongkongdrinksModElements.ModElement.Tag
+public class HFTGinsengHoneyEntityEntityIsHurtProcedure extends HongkongdrinksModElements.ModElement {
+
+	public HFTGinsengHoneyEntityEntityIsHurtProcedure(HongkongdrinksModElements instance) {
+		super(instance, 217);
+
+	}
+
+	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
+		if (dependencies.get("entity") == null) {
+			System.err.println("Failed to load dependency entity for procedure HFTGinsengHoneyEntityEntityIsHurt!");
+			return;
+		}
+		if (dependencies.get("x") == null) {
+			System.err.println("Failed to load dependency x for procedure HFTGinsengHoneyEntityEntityIsHurt!");
+			return;
+		}
+		if (dependencies.get("y") == null) {
+			System.err.println("Failed to load dependency y for procedure HFTGinsengHoneyEntityEntityIsHurt!");
+			return;
+		}
+		if (dependencies.get("z") == null) {
+			System.err.println("Failed to load dependency z for procedure HFTGinsengHoneyEntityEntityIsHurt!");
+			return;
+		}
+		if (dependencies.get("world") == null) {
+			System.err.println("Failed to load dependency world for procedure HFTGinsengHoneyEntityEntityIsHurt!");
+			return;
+		}
+
+		Entity entity = (Entity) dependencies.get("entity");
+		int x = (int) dependencies.get("x");
+		int y = (int) dependencies.get("y");
+		int z = (int) dependencies.get("z");
+		World world = (World) dependencies.get("world");
+
+		entity.remove();
+		if ((!(new Object() {
+			public boolean checkGamemode(Entity _ent) {
+				if (_ent instanceof ServerPlayerEntity) {
+					return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.CREATIVE;
+				} else if (_ent instanceof ClientPlayerEntity) {
+					NetworkPlayerInfo _npi = Minecraft.getInstance().getConnection()
+							.getPlayerInfo(((ClientPlayerEntity) _ent).getGameProfile().getId());
+					return _npi != null && _npi.getGameType() == GameType.CREATIVE;
+				}
+				return false;
+			}
+		}.checkGamemode(entity)))) {
+			if (!world.isRemote) {
+				ItemEntity entityToSpawn = new ItemEntity(world, x, y, z, new ItemStack(HFTGinsengHoneyItem.block, (int) (1)));
+				entityToSpawn.setPickupDelay(10);
+				world.addEntity(entityToSpawn);
+			}
+		}
+
+	}
+
+}

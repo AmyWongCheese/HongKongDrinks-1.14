@@ -23,7 +23,7 @@ public class VitaAppleGreenTeaItem extends HongkongdrinksModElements.ModElement 
 	@ObjectHolder("hongkongdrinks:vita_apple_green_tea")
 	public static final Item block = null;
 	public VitaAppleGreenTeaItem(HongkongdrinksModElements instance) {
-		super(instance, 13);
+		super(instance, 16);
 	}
 
 	@Override

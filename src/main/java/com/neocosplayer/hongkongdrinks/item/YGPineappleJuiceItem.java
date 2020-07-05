@@ -23,7 +23,7 @@ public class YGPineappleJuiceItem extends HongkongdrinksModElements.ModElement {
 	@ObjectHolder("hongkongdrinks:yg_pineapple_juice")
 	public static final Item block = null;
 	public YGPineappleJuiceItem(HongkongdrinksModElements instance) {
-		super(instance, 33);
+		super(instance, 31);
 	}
 
 	@Override

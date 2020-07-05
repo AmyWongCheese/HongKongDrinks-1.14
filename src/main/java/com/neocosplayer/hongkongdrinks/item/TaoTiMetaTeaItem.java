@@ -23,7 +23,7 @@ public class TaoTiMetaTeaItem extends HongkongdrinksModElements.ModElement {
 	@ObjectHolder("hongkongdrinks:tao_ti_meta_tea")
 	public static final Item block = null;
 	public TaoTiMetaTeaItem(HongkongdrinksModElements instance) {
-		super(instance, 58);
+		super(instance, 36);
 	}
 
 	@Override

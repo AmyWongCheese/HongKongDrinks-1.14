@@ -23,7 +23,7 @@ public class VitaMangoJuiceItem extends HongkongdrinksModElements.ModElement {
 	@ObjectHolder("hongkongdrinks:vita_mango_juice")
 	public static final Item block = null;
 	public VitaMangoJuiceItem(HongkongdrinksModElements instance) {
-		super(instance, 115);
+		super(instance, 12);
 	}
 
 	@Override

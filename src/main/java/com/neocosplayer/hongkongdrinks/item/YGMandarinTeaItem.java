@@ -23,7 +23,7 @@ public class YGMandarinTeaItem extends HongkongdrinksModElements.ModElement {
 	@ObjectHolder("hongkongdrinks:yg_mandarin_tea")
 	public static final Item block = null;
 	public YGMandarinTeaItem(HongkongdrinksModElements instance) {
-		super(instance, 28);
+		super(instance, 23);
 	}
 
 	@Override

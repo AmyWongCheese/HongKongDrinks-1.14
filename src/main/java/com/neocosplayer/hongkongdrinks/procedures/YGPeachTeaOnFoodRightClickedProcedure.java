@@ -28,7 +28,6 @@ public class YGPeachTeaOnFoodRightClickedProcedure extends HongkongdrinksModElem
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
 		Entity entityToSpawn = new YGPeachTeaEntityEntity.CustomEntity(YGPeachTeaEntityEntity.entity, world);
-
 		if ((((entity.isSneaking()) && (new ItemStack(YGPeachTeaItem.block, (int) (1))
 				.getItem() == ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem()))
 				|| ((new ItemStack(YGPeachTeaItem.block, (int) (1))
