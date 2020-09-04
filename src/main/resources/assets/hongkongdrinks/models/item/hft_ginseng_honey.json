@@ -1,6 +1,7 @@
 {
   "parent": "hongkongdrinks:custom/hungfooktong",
   "textures": {
-    "0": "hongkongdrinks:blocks/hftginsenghoney"
+    "0": "hongkongdrinks:blocks/hftginsenghoney",
+    "particle": "hongkongdrinks:items/hftginsenghoney_item"
   }
 }

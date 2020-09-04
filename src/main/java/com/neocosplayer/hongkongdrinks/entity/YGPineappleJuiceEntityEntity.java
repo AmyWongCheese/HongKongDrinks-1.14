@@ -2,6 +2,7 @@
 package com.neocosplayer.hongkongdrinks.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.fml.network.NetworkHooks;
 import net.minecraftforge.fml.network.FMLPlayMessages;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -16,11 +17,11 @@ import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
+import net.minecraft.network.IPacket;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.projectile.PotionEntity;
 import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.ai.goal.LookAtGoal;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.EntityType;
@@ -33,6 +34,10 @@ import net.minecraft.client.renderer.model.ModelBox;
 import net.minecraft.client.renderer.entity.model.RendererModel;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
+import net.minecraft.block.material.Material;
+
+import java.util.Map;
+import java.util.HashMap;
 
 import com.neocosplayer.hongkongdrinks.procedures.YGPineappleJuiceEntityEntityIsHurtProcedure;
 import com.neocosplayer.hongkongdrinks.item.YGPineappleJuiceItem;
@@ -60,7 +65,8 @@ public class YGPineappleJuiceEntityEntity extends HongkongdrinksModElements.ModE
 			biome.getSpawns(EntityClassification.CREATURE).add(new Biome.SpawnListEntry(entity, 1, 1, 1));
 		}
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
-				AnimalEntity::func_223315_a);
+				(entityType, world, reason, pos,
+						random) -> (world.getBlockState(pos.down()).getMaterial() == Material.ORGANIC && world.getLightSubtracted(pos, 0) > 8));
 	}
 
 	@SubscribeEvent
@@ -88,6 +94,11 @@ public class YGPineappleJuiceEntityEntity extends HongkongdrinksModElements.ModE
 		}
 
 		@Override
+		public IPacket<?> createSpawnPacket() {
+			return NetworkHooks.getEntitySpawningPacket(this);
+		}
+
+		@Override
 		protected void registerGoals() {
 			super.registerGoals();
 			this.goalSelector.addGoal(1, new LookAtGoal(this, PlayerEntity.class, (float) 3));
@@ -109,11 +120,6 @@ public class YGPineappleJuiceEntityEntity extends HongkongdrinksModElements.ModE
 		}
 
 		@Override
-		public net.minecraft.util.SoundEvent getAmbientSound() {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
-		}
-
-		@Override
 		public net.minecraft.util.SoundEvent getHurtSound(DamageSource ds) {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
 		}
@@ -124,19 +130,14 @@ public class YGPineappleJuiceEntityEntity extends HongkongdrinksModElements.ModE
 		}
 
 		@Override
-		protected float getSoundVolume() {
-			return 1.0F;
-		}
-
-		@Override
 		public boolean attackEntityFrom(DamageSource source, float amount) {
-			int x = (int) this.posX;
-			int y = (int) this.posY;
-			int z = (int) this.posZ;
+			double x = this.posX;
+			double y = this.posY;
+			double z = this.posZ;
 			Entity entity = this;
 			Entity sourceentity = source.getTrueSource();
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
