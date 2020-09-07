@@ -68,7 +68,7 @@
       "type": "food",
       "sortid": 1,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "vita_lemon_tea"
     },
@@ -170,7 +170,7 @@
       "type": "food",
       "sortid": 16,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "vita_apple_green_tea"
     },
@@ -263,7 +263,7 @@
       "type": "food",
       "sortid": 39,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "healthworks_hawhorn_apple_drink"
     },
@@ -356,7 +356,7 @@
       "type": "food",
       "sortid": 40,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "healthworks_rock_sugar_with_pear_drink"
     },
@@ -449,7 +449,7 @@
       "type": "food",
       "sortid": 23,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "yg_mandarin_tea"
     },
@@ -542,7 +542,7 @@
       "type": "food",
       "sortid": 31,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "yg_pineapple_juice"
     },
@@ -635,7 +635,7 @@
       "type": "food",
       "sortid": 34,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "tao_ti_grape_juice"
     },
@@ -728,7 +728,7 @@
       "type": "food",
       "sortid": 32,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "tao_ti_honey_green_tea"
     },
@@ -821,7 +821,7 @@
       "type": "food",
       "sortid": 37,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "tao_ti_meta_green_tea"
     },
@@ -914,7 +914,7 @@
       "type": "food",
       "sortid": 33,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "tao_ti_mandarin_lemon"
     },
@@ -1007,7 +1007,7 @@
       "type": "food",
       "sortid": 36,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "tao_ti_meta_tea"
     },
@@ -1100,7 +1100,7 @@
       "type": "food",
       "sortid": 35,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "tao_ti_oolong_tea"
     },
@@ -1193,7 +1193,7 @@
       "type": "food",
       "sortid": 38,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "tao_ti_white_tea"
     },
@@ -1286,7 +1286,7 @@
       "type": "food",
       "sortid": 13,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "vita_blackcurrant_juice"
     },
@@ -1379,7 +1379,7 @@
       "type": "food",
       "sortid": 11,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "vita_chocolate_milk"
     },
@@ -1472,7 +1472,7 @@
       "type": "food",
       "sortid": 2,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "vita_chrysanthemum_tea"
     },
@@ -1565,7 +1565,7 @@
       "type": "food",
       "sortid": 14,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "vita_guava_juice"
     },
@@ -1676,7 +1676,7 @@
       "type": "food",
       "sortid": 19,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "vita_honey_lime_drink"
     },
@@ -1769,7 +1769,7 @@
       "type": "food",
       "sortid": 18,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "vita_imperatae_cane_drink"
     },
@@ -1862,7 +1862,7 @@
       "type": "food",
       "sortid": 4,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "vita_malt_soya_milk"
     },
@@ -1955,7 +1955,7 @@
       "type": "food",
       "sortid": 12,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "vita_mango_juice"
     },
@@ -2048,7 +2048,7 @@
       "type": "food",
       "sortid": 3,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "vita_soya_milk"
     },
@@ -2141,7 +2141,7 @@
       "type": "food",
       "sortid": 26,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "yg_apple_juice"
     },
@@ -2234,7 +2234,7 @@
       "type": "food",
       "sortid": 28,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "yg_coconut_milk"
     },
@@ -2327,7 +2327,7 @@
       "type": "food",
       "sortid": 21,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "yg_chrysanthemum_tea"
     },
@@ -2420,7 +2420,7 @@
       "type": "food",
       "sortid": 20,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "yg_lemon_tea"
     },
@@ -2513,7 +2513,7 @@
       "type": "food",
       "sortid": 25,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "yg_mango_juice"
     },
@@ -2606,7 +2606,7 @@
       "type": "food",
       "sortid": 29,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "yg_melon_milk"
     },
@@ -2699,7 +2699,7 @@
       "type": "food",
       "sortid": 27,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "yg_orange_juice"
     },
@@ -2792,7 +2792,7 @@
       "type": "food",
       "sortid": 22,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "yg_peach_tea"
     },
@@ -2885,7 +2885,7 @@
       "type": "food",
       "sortid": 44,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "hft_passion_fruit"
     },
@@ -2987,7 +2987,7 @@
       "type": "food",
       "sortid": 5,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "vita_choco_soya_milk"
     },
@@ -3080,7 +3080,7 @@
       "type": "food",
       "sortid": 6,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "vita_coconut_soya_milk"
     },
@@ -4027,7 +4027,7 @@
       "type": "food",
       "sortid": 42,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "hft_ginseng_honey"
     },

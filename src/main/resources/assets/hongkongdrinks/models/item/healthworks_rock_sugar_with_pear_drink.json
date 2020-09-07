@@ -1,7 +1,7 @@
 {
   "parent": "hongkongdrinks:custom/vitalemon",
   "textures": {
-    "0": "hongkongdrinks:blocks/healthworkspear",
+    "0": "hongkongdrinks:healthworkspear_e",
     "particle": "hongkongdrinks:items/healthworkspear_item"
   }
 }
