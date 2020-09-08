@@ -2,6 +2,8 @@
 package com.neocosplayer.hongkongdrinks.item;
 
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
 import net.minecraft.item.UseAction;
@@ -34,6 +36,12 @@ public class VitaGingerSoyaMilkWarmItem extends HongkongdrinksModElements.ModEle
 			super(new Item.Properties().group(HongKongDrinksItemGroup.tab).maxStackSize(64)
 					.food((new Food.Builder()).hunger(4).saturation(0.3f).build()));
 			setRegistryName("vita_ginger_soya_milk_warm");
+		}
+
+		@Override
+		@OnlyIn(Dist.CLIENT)
+		public boolean hasEffect(ItemStack itemstack) {
+			return true;
 		}
 
 		@Override
