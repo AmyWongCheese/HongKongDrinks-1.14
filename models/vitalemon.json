@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "HongKongDrinks/vitalemontea",
-		"particle": "HongKongDrinks/vitalemontea"
+		"0": "HongKongDrinks/vitalemon",
+		"particle": "HongKongDrinks/vitalemon"
 	},
 	"elements": [
 		{
@@ -11,12 +11,12 @@
 			"shade": false,
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3, 8]},
 			"faces": {
-				"north": {"uv": [0, 0, 8, 12], "texture": "#0"},
-				"east": {"uv": [8, 0, 12, 12], "texture": "#0"},
-				"south": {"uv": [0, 0, 8, 12], "texture": "#0"},
-				"west": {"uv": [12, 0, 16, 12], "texture": "#0"},
-				"up": {"uv": [0, 12, 8, 16], "texture": "#0"},
-				"down": {"uv": [8, 12, 16, 16], "texture": "#0"}
+				"north": {"uv": [2, 2, 6, 8], "texture": "#0"},
+				"east": {"uv": [0, 2, 2, 8], "texture": "#0"},
+				"south": {"uv": [8, 2, 12, 8], "texture": "#0"},
+				"west": {"uv": [6, 2, 8, 8], "texture": "#0"},
+				"up": {"uv": [2, 0, 6, 2], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [6, 0, 10, 2], "texture": "#0"}
 			}
 		}
 	],

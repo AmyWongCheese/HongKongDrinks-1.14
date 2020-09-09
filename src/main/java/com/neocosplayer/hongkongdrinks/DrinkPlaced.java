@@ -1,9 +1,17 @@
 package com.neocosplayer.hongkongdrinks.procedures;
 
 import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
 import net.minecraft.util.math.RayTraceContext;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Direction;
+import net.minecraft.nbt.CompoundNBT;
+import net.minecraft.entity.SpawnReason;
+import net.minecraft.entity.MobEntity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.Entity;
+import net.minecraft.block.Blocks;
 
 import com.neocosplayer.hongkongdrinks.HongkongdrinksModElements;
 
@@ -16,60 +24,66 @@ public class DrinkPlaced extends HongkongdrinksModElements.ModElement {
 		super(instance, 170);
 	}
 
-	public static void place(Entity entity, World world, Entity entityToSpawn) {
-		float x = (float) entity.posX;
-		float y = (float) entity.posY;
-		float z = (float) entity.posZ;
-		float a = x - (int) x;
-		float b = z - (int) z;
-		if (((entity.getHorizontalFacing()) == Direction.NORTH)) {
-			if (!world.isRemote) {
-				entityToSpawn
-						.setLocationAndAngles(
-								((entity.world
-										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-												entity.getEyePosition(1f)
-														.add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
-												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
-										.getPos().getX()) + a),
-								(y + 1),
-								((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-										entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
-										RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) - b),
-								world.rand.nextFloat() * 360F, 0);
-				world.addEntity(entityToSpawn);
-			}
-		} else if (((entity.getHorizontalFacing()) == Direction.SOUTH) || ((entity.getHorizontalFacing()) == Direction.WEST)) {
-			if (!world.isRemote) {
-				entityToSpawn
-						.setLocationAndAngles(
-								((entity.world
-										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-												entity.getEyePosition(1f)
-														.add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
-												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
-										.getPos().getX()) + a),
-								(y + 1),
-								((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-										entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
-										RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + b + 1),
-								world.rand.nextFloat() * 360F, 0);
-				world.addEntity(entityToSpawn);
-			}
-		} else if (((entity.getHorizontalFacing()) == Direction.EAST)) {
-			if (!world.isRemote) {
-				entityToSpawn
-						.setLocationAndAngles(
-								((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-										entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
-										RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) - a + 1),
-								(y + 1),
-								((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-										entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
-										RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + b + 1),
-								world.rand.nextFloat() * 360F, 0);
-				world.addEntity(entityToSpawn);
-			}
-		}
+	public static void place(double x, double y, double z, Entity entity, IWorld world, Entity entityToSpawn) {
+		double a = x - (int) x;
+		double b = z - (int) z;
+			if (((entity.getHorizontalFacing()) == Direction.NORTH)) {
+				if (world instanceof World && !world.getWorld().isRemote) {
+					entityToSpawn.setLocationAndAngles(
+							((entity.world
+									.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+											entity.getEyePosition(1f)
+													.add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
+											RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+									.getPos().getX()) + a),
+							(y + 1),
+							((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) - b),
+							world.getRandom().nextFloat() * 360F, 0);
+					if (entityToSpawn instanceof MobEntity)
+						((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
+								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+					world.addEntity(entityToSpawn);
+				}
+			} else if (((entity.getHorizontalFacing()) == Direction.SOUTH) || ((entity.getHorizontalFacing()) == Direction.WEST)) {
+				if (world instanceof World && !world.getWorld().isRemote) {
+					entityToSpawn.setLocationAndAngles(
+							((entity.world
+									.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+											entity.getEyePosition(1f)
+													.add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
+											RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+									.getPos().getX()) + a),
+							(y + 1),
+							((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + b + 1),
+							world.getRandom().nextFloat() * 360F, 0);
+					if (entityToSpawn instanceof MobEntity)
+						((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
+								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+					world.addEntity(entityToSpawn);
+				}
+			} else if (((entity.getHorizontalFacing()) == Direction.EAST)) {
+				if (world instanceof World && !world.getWorld().isRemote) {
+					entityToSpawn.setLocationAndAngles(
+							((entity.world
+									.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+											entity.getEyePosition(1f)
+													.add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
+											RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+									.getPos().getX()) - a + 1),
+							(y + 1),
+							((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 5, entity.getLook(1f).y * 5, entity.getLook(1f).z * 5),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + b + 1),
+							world.getRandom().nextFloat() * 360F, 0);
+					if (entityToSpawn instanceof MobEntity)
+						((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
+								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+					world.addEntity(entityToSpawn);
+				}
+			} 
 	}
 }

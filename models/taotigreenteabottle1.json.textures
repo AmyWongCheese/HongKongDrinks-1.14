@@ -2,15 +2,9 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "taotigreenteabottle1"
+        "0": ""
       },
       "name": "default"
-    },
-    "taotiwhiteteabottle": {
-      "map": {
-        "0": "taotiwhiteteabottle"
-      },
-      "name": "taotiwhiteteabottle"
     }
   }
 }
