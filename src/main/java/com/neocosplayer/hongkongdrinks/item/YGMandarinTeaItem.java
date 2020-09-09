@@ -13,6 +13,9 @@ import net.minecraft.item.Food;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 
+import java.util.Map;
+import java.util.HashMap;
+
 import com.neocosplayer.hongkongdrinks.procedures.YGMandarinTeaOnFoodRightClickedProcedure;
 import com.neocosplayer.hongkongdrinks.procedures.VitaLemonTeaFoodEatenProcedure;
 import com.neocosplayer.hongkongdrinks.itemgroup.HongKongDrinksItemGroup;
@@ -46,11 +49,11 @@ public class YGMandarinTeaItem extends HongkongdrinksModElements.ModElement {
 		public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
 			ActionResult<ItemStack> ar = super.onItemRightClick(world, entity, hand);
 			ItemStack itemstack = ar.getResult();
-			int x = (int) entity.posX;
-			int y = (int) entity.posY;
-			int z = (int) entity.posZ;
+			double x = entity.posX;
+			double y = entity.posY;
+			double z = entity.posZ;
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
@@ -64,11 +67,11 @@ public class YGMandarinTeaItem extends HongkongdrinksModElements.ModElement {
 		@Override
 		public ItemStack onItemUseFinish(ItemStack itemStack, World world, LivingEntity entity) {
 			ItemStack retval = super.onItemUseFinish(itemStack, world, entity);
-			int x = (int) entity.posX;
-			int y = (int) entity.posY;
-			int z = (int) entity.posZ;
+			double x = entity.posX;
+			double y = entity.posY;
+			double z = entity.posZ;
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				VitaLemonTeaFoodEatenProcedure.executeProcedure($_dependencies);
 			}

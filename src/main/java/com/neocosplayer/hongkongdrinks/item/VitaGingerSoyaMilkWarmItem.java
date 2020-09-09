@@ -10,6 +10,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Food;
 import net.minecraft.entity.LivingEntity;
 
+import java.util.Map;
+import java.util.HashMap;
+
 import com.neocosplayer.hongkongdrinks.procedures.VitaGingerSoyaMilkWarmFoodEatenProcedure;
 import com.neocosplayer.hongkongdrinks.itemgroup.HongKongDrinksItemGroup;
 import com.neocosplayer.hongkongdrinks.HongkongdrinksModElements;
@@ -41,11 +44,11 @@ public class VitaGingerSoyaMilkWarmItem extends HongkongdrinksModElements.ModEle
 		@Override
 		public ItemStack onItemUseFinish(ItemStack itemStack, World world, LivingEntity entity) {
 			ItemStack retval = super.onItemUseFinish(itemStack, world, entity);
-			int x = (int) entity.posX;
-			int y = (int) entity.posY;
-			int z = (int) entity.posZ;
+			double x = entity.posX;
+			double y = entity.posY;
+			double z = entity.posZ;
 			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				VitaGingerSoyaMilkWarmFoodEatenProcedure.executeProcedure($_dependencies);
 			}

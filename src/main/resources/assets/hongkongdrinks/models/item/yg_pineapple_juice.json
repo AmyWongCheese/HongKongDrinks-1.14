@@ -1,6 +1,7 @@
 {
   "parent": "hongkongdrinks:custom/vitalemon",
   "textures": {
-    "0": "hongkongdrinks:blocks/pineapplejuice"
+    "0": "hongkongdrinks:blocks/pineapplejuice",
+    "particle": "hongkongdrinks:items/pineapplejuice_item"
   }
 }
