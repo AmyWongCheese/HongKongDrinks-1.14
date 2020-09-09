@@ -1,10 +1,14 @@
 package com.neocosplayer.hongkongdrinks.procedures;
 
+import net.minecraftforge.registries.ForgeRegistries;
+
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.RayTraceContext;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Direction;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.SoundCategory;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.MobEntity;
@@ -27,6 +31,17 @@ public class DrinkPlaced extends HongkongdrinksModElements.ModElement {
 	public static void place(double x, double y, double z, Entity entity, IWorld world, Entity entityToSpawn) {
 		double a = x - (int) x;
 		double b = z - (int) z;
+
+			if (!world.getWorld().isRemote) {
+				world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wood.place")),
+						SoundCategory.NEUTRAL, (float) 1, (float) 1);
+			} else {
+				world.getWorld().playSound(x, y, z,
+						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wood.place")),
+						SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+			}
+		
 			if (((entity.getHorizontalFacing()) == Direction.NORTH)) {
 				if (world instanceof World && !world.getWorld().isRemote) {
 					entityToSpawn.setLocationAndAngles(
