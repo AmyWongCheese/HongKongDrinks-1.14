@@ -4114,6 +4114,99 @@
       "locked_code": true,
       "ids": {},
       "registry_name": "hft_mandarin_aloe"
+    },
+    {
+      "name": "VitaSweetPotatoSoyaMilk",
+      "type": "food",
+      "sortid": 227,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "vita_sweet_potato_soya_milk"
+    },
+    {
+      "name": "VitaSweetPotatoSoyaMilkEntityEntityIsHurt",
+      "type": "procedure",
+      "sortid": 228,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vita_sweet_potato_soya_milk_entity_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaSweetPotatoSoyaMilkEntity",
+      "type": "mob",
+      "sortid": 228,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vita_sweet_potato_soya_milk_entity"
+    },
+    {
+      "name": "VitaSweetPotatoSoyaMilkRightClickedInAir",
+      "type": "procedure",
+      "sortid": 229,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "vita_sweet_potato_soya_milk_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VitaSweetPotatoSoyaMilkRecipe",
+      "type": "recipe",
+      "sortid": 230,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "vita_sweet_potato_soya_milk_recipe"
     }
   ],
   "variable_elements": [],
@@ -4141,6 +4234,7 @@
       "entity.hongkongdrinks.tao_ti_honey_green_tea_entity": "¹D¦a¸Á»eºñ¯ù",
       "item.hongkongdrinks.tao_ti_white_tea_entity": "Tao Ti Supreme White Tea Spawn Egg",
       "item.hongkongdrinks.vita_sugarcane_juice_entity": "Vita Sugarcane Juice Spawn Egg",
+      "entity.hongkongdrinks.vita_sweet_potato_soya_milk_entity": "Vita Sweet Potato Soya Milk",
       "entity.hongkongdrinks.vita_vanilla_soya_milk_entity": "ºû¥L¶³©O®³¨§¥¤",
       "item.hongkongdrinks.vita_chrysanthemum_tea_entity": "Vita Chrysanthemum Tea Spawn Egg",
       "item.hongkongdrinks.yg_sugarcane_juice": "¶§¥ú½©¥Ä¶¼«~",
@@ -4151,6 +4245,7 @@
       "item.hongkongdrinks.vita_lemon_tea_entity": "Vita Lemon Tea Spawn Egg",
       "entity.hongkongdrinks.vita_lemon_tea_entity": "ºû¥LÂfÂc¯ù",
       "item.hongkongdrinks.yg_orange_juice": "¶§¥ú¾í¥Ä",
+      "item.hongkongdrinks.vita_sweet_potato_soya_milk": "Vita Sweet Potato Soya Milk",
       "item.hongkongdrinks.vita_guava_juice_entity": "Vita Guava Juice Spawn Egg",
       "entity.hongkongdrinks.yg_honey_lychee_tea_entity": "¶§¥ú¸Á»e¯ïªK¯ù",
       "entity.hongkongdrinks.tao_ti_mandarin_lemon_entity": "¹D¦a¬a®ÜÂfÂc",
@@ -4196,6 +4291,7 @@
       "item.hongkongdrinks.tao_ti_meta_tea": "¹D¦a·¥«~¸Ñ¯ù",
       "item.hongkongdrinks.vita_choco_soya_milk": "ºû¥L¦¶¥j¤O¨§¥¤",
       "item.hongkongdrinks.vita_mint_choco_soya_milk_entity": "Vita Mint Chocolate Soya Milk Spawn Egg",
+      "item.hongkongdrinks.vita_sweet_potato_soya_milk_entity": "Vita Sweet Potato Soya Milk Spawn Egg",
       "entity.hongkongdrinks.yg_mandarin_tea_entity": "¶§¥ú¬a­»¯ù",
       "entity.hongkongdrinks.tao_ti_meta_tea_entity": "¹D¦a·¥«~¸Ñ¯ù",
       "entity.hongkongdrinks.vita_honey_lime_entity": "²M¤ß´Ì¥V»e«CÂf",
@@ -4274,6 +4370,7 @@
       "entity.hongkongdrinks.tao_ti_honey_green_tea_entity": "Tao Ti Honey Green Tea",
       "item.hongkongdrinks.tao_ti_white_tea_entity": "Tao Ti Supreme White Tea Spawn Egg",
       "item.hongkongdrinks.vita_sugarcane_juice_entity": "Vita Sugarcane Juice Spawn Egg",
+      "entity.hongkongdrinks.vita_sweet_potato_soya_milk_entity": "Vita Sweet Potato Soya Milk",
       "entity.hongkongdrinks.vita_vanilla_soya_milk_entity": "Vita Vanilla Soya Milk",
       "item.hongkongdrinks.vita_chrysanthemum_tea_entity": "Vita Chrysanthemum Tea Spawn Egg",
       "item.hongkongdrinks.yg_sugarcane_juice": "Yeung Gwong Sugarcane Juice",
@@ -4284,6 +4381,7 @@
       "item.hongkongdrinks.vita_lemon_tea_entity": "Vita Lemon Tea Spawn Egg",
       "entity.hongkongdrinks.vita_lemon_tea_entity": "Vita Lemon Tea",
       "item.hongkongdrinks.yg_orange_juice": "Yeung Gwong Orange Juice",
+      "item.hongkongdrinks.vita_sweet_potato_soya_milk": "Vita Sweet Potato Soya Milk",
       "item.hongkongdrinks.vita_guava_juice_entity": "Vita Guava Juice Spawn Egg",
       "entity.hongkongdrinks.yg_honey_lychee_tea_entity": "Yeung Gwong Honey Lychee Tea",
       "entity.hongkongdrinks.tao_ti_mandarin_lemon_entity": "Tao Ti Mandarin Lemon",
@@ -4329,6 +4427,7 @@
       "item.hongkongdrinks.tao_ti_meta_tea": "Tao Ti Supreme Meta Tea",
       "item.hongkongdrinks.vita_choco_soya_milk": "Vita Chocolate Soya Milk",
       "item.hongkongdrinks.vita_mint_choco_soya_milk_entity": "Vita Mint Chocolate Soya Milk Spawn Egg",
+      "item.hongkongdrinks.vita_sweet_potato_soya_milk_entity": "Vita Sweet Potato Soya Milk Spawn Egg",
       "entity.hongkongdrinks.yg_mandarin_tea_entity": "Yeung Gwong Mandarin Tea",
       "entity.hongkongdrinks.tao_ti_meta_tea_entity": "Tao Ti Supreme Meta Tea",
       "entity.hongkongdrinks.vita_honey_lime_entity": "Vita Honey Lime Drink",
