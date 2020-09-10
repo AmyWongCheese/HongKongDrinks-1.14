@@ -1,12 +1,7 @@
 package com.neocosplayer.hongkongdrinks.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.SoundCategory;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
@@ -44,15 +39,6 @@ public class VitaVanillaSoyaMilkOnFoodRightClickedProcedure extends Hongkongdrin
 			if (entity instanceof PlayerEntity)
 				((PlayerEntity) entity).inventory
 						.clearMatchingItems(p -> new ItemStack(VitaVanillaSoyaMilkItem.block, (int) (1)).getItem() == p.getItem(), (int) 1);
-			if (!world.getWorld().isRemote) {
-				world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
-						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wood.place")),
-						SoundCategory.NEUTRAL, (float) 1, (float) 1);
-			} else {
-				world.getWorld().playSound(x, y, z,
-						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wood.place")),
-						SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
-			}
 
 			DrinkPlaced.place(x, y, z, entity, world, entityToSpawn);
 		}
