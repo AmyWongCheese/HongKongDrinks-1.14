@@ -1,0 +1,31 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {{
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:yellow_dye"
+    },
+    {
+      "tag": "forge:sugar"
+    },
+    {
+      "tag": "forge:fruits/banana"
+    },
+    {
+      "tag": "forge:milk"
+    },
+    {
+      "tag": "forge:batter"
+    },
+    {
+      "tag": "forge:water"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:vitasoy_go_banana_pancake_drink",
+    "count": 1
+  }
+}
