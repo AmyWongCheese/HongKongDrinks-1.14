@@ -25,23 +25,28 @@ public class TaoTiMandarinLemonEntityEntityIsHurtProcedure extends Hongkongdrink
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure TaoTiMandarinLemonEntityEntityIsHurt!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure TaoTiMandarinLemonEntityEntityIsHurt!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
-			System.err.println("Failed to load dependency x for procedure TaoTiMandarinLemonEntityEntityIsHurt!");
+			if (!dependencies.containsKey("x"))
+				System.err.println("Failed to load dependency x for procedure TaoTiMandarinLemonEntityEntityIsHurt!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
-			System.err.println("Failed to load dependency y for procedure TaoTiMandarinLemonEntityEntityIsHurt!");
+			if (!dependencies.containsKey("y"))
+				System.err.println("Failed to load dependency y for procedure TaoTiMandarinLemonEntityEntityIsHurt!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
-			System.err.println("Failed to load dependency z for procedure TaoTiMandarinLemonEntityEntityIsHurt!");
+			if (!dependencies.containsKey("z"))
+				System.err.println("Failed to load dependency z for procedure TaoTiMandarinLemonEntityEntityIsHurt!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure TaoTiMandarinLemonEntityEntityIsHurt!");
+			if (!dependencies.containsKey("world"))
+				System.err.println("Failed to load dependency world for procedure TaoTiMandarinLemonEntityEntityIsHurt!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

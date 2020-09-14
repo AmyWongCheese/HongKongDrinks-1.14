@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "hongkongdrinks:block/vending_machine"
+    },
+    "facing=east": {
+      "model": "hongkongdrinks:block/vending_machine",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "hongkongdrinks:block/vending_machine",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "hongkongdrinks:block/vending_machine",
+      "y": 270
+    }
+  }
+}

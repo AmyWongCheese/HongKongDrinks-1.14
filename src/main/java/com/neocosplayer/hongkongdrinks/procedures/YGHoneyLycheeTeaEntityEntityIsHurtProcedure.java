@@ -25,23 +25,28 @@ public class YGHoneyLycheeTeaEntityEntityIsHurtProcedure extends HongkongdrinksM
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure YGHoneyLycheeTeaEntityEntityIsHurt!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure YGHoneyLycheeTeaEntityEntityIsHurt!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
-			System.err.println("Failed to load dependency x for procedure YGHoneyLycheeTeaEntityEntityIsHurt!");
+			if (!dependencies.containsKey("x"))
+				System.err.println("Failed to load dependency x for procedure YGHoneyLycheeTeaEntityEntityIsHurt!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
-			System.err.println("Failed to load dependency y for procedure YGHoneyLycheeTeaEntityEntityIsHurt!");
+			if (!dependencies.containsKey("y"))
+				System.err.println("Failed to load dependency y for procedure YGHoneyLycheeTeaEntityEntityIsHurt!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
-			System.err.println("Failed to load dependency z for procedure YGHoneyLycheeTeaEntityEntityIsHurt!");
+			if (!dependencies.containsKey("z"))
+				System.err.println("Failed to load dependency z for procedure YGHoneyLycheeTeaEntityEntityIsHurt!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure YGHoneyLycheeTeaEntityEntityIsHurt!");
+			if (!dependencies.containsKey("world"))
+				System.err.println("Failed to load dependency world for procedure YGHoneyLycheeTeaEntityEntityIsHurt!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

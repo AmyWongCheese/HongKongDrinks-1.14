@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "vending1"
+      },
+      "name": "default"
+    }
+  }
+}
