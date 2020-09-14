@@ -1,0 +1,46 @@
+{
+  "_fv": 10,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "Items.PAPER"
+      },
+      {
+        "value": "Items.DYE#10"
+      },
+      {
+        "value": "Items.SUGAR"
+      },
+      {
+        "value": "Items.APPLE"
+      },
+      {
+        "value": "Items.APPLE"
+      },
+      {
+        "value": "Blocks.LEAVES"
+      },
+      {
+        "value": "Items.WATER_BUCKET"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:VitaAppleMangoTea"
+    },
+    "name": "vita_apple_mango_tea_recipe",
+    "namespace": "mod"
+  }
+}

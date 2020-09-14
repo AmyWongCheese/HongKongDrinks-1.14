@@ -1,0 +1,7 @@
+{
+  "parent": "hongkongdrinks:custom/vitalemon",
+  "textures": {
+    "0": "hongkongdrinks:vitaapplemangotea_e",
+    "particle": "hongkongdrinks:items/vitaapplemangotea_item"
+  }
+}
