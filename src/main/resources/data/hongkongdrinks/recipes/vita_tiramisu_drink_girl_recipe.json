@@ -1,0 +1,37 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:pink_dye"
+    },
+    {
+      "tag": "forge:sugar"
+    },
+    {
+      "tag": "forge:batter"
+    },
+    {
+      "tag": "forge:cheese"
+    },
+    {
+      "tag": "forge:crops/coffeebean"
+    },
+    {
+      "tag": "forge:cream"
+    },
+    {
+      "tag": "forge:crops/cocoabeans"
+    },
+    {
+      "tag": "forge:water"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:vita_tiramisu_drink_boy",
+    "count": 1
+  }
+}
