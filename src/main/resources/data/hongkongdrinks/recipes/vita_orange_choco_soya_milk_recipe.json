@@ -1,0 +1,31 @@
+{
+  "group": "hongkongdrinks",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:orange_dye"
+    },
+    {
+      "tag": "forge:sugar"
+    },
+    {
+      "tag": "forge:fruits/orange"
+    },
+    {
+      "tag": "forge:crops/cocoabeans"
+    },
+    {
+      "tag": "forge:crops/soybean"
+    },
+    {
+      "tag": "forge:water"
+    }
+  ],
+  "result": {
+    "item": "hongkongdrinks:vita_orange_choco_soya_milk",
+    "count": 1
+  }
+}
